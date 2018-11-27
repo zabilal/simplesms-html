@@ -1,0 +1,11 @@
+.bottom-margin1{margin-bottom: 16px;}
+.leftmargin{margin-left:16px;}
+.ritpadding{padding-right:14px;}
+.leftpadding{padding-left:14px;}
+
+.facebook {
+    background: radial-gradient(#526AA6 1%, #394E84 90%);
+}
+.twitter {
+    background: radial-gradient(#51A7E8,#4597D7,#3F91CF, #3B8CC9);
+}

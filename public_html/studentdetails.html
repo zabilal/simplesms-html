@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<title>School Management System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w31.css">
+<link rel="stylesheet" href="css/panelcss.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+    <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+      <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+      <span class="w3-bar-item w3-right">Logo</span>
+    </div>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:200px;" id="mySidebar"><br>
+      <div class="w3-container w3-row">
+        <div class="w3-col s4">
+          <img src="images/avatar2.png" class="w3-circle" style="width:46px">
+        </div>
+          <span class="w3-left"><span>Richi<br /><span>Student</span></span></span>
+      </div>
+      <hr>
+
+      <!--dashboard-->
+
+      <div class="w3-bar-block">
+          <div class="w3-accordion">
+              <button onclick="myFunction('dashboard')" class="w3-btn-block w3-left-align w3-zak">Dashboard<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="dashboard" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div> 
+
+          <div class="w3-accordion">
+            <button onclick="myFunction('students')" class="w3-btn-block w3-left-align w3-zak">Students<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="students" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('teachers')" class="w3-btn-block w3-left-align w3-zak">Teachers<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="teachers" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('parents')" class="w3-btn-block w3-left-align w3-zak">Parents<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="parents" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('library')" class="w3-btn-block w3-left-align w3-zak">Library<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="library" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak">Account<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="account" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('demo1')" class="w3-btn-block w3-left-align w3-zak">Class<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="demo1" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('subject')" class="w3-btn-block w3-left-align w3-zak">Subject<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="subject" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('classrountine')" class="w3-btn-block w3-left-align w3-zak">Class Routine<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="classrountine" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('attendance')" class="w3-btn-block w3-left-align w3-zak">Attendance<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="attendance" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak">Exam<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="exam" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('transport')" class="w3-btn-block w3-left-align w3-zak">Transport<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="transport" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('hostel')" class="w3-btn-block w3-left-align w3-zak">Hostel<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="hostel" class="w3-accordion-content w3-bar-block">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('notice')" class="w3-btn-block w3-left-align w3-zak">Notice<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="notice" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+            <button onclick="myFunction('demo1')" class="w3-btn-block w3-left-align w3-zak">Message<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="demo1" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+
+          <div class="w3-accordion w3-green">
+              <button onclick="myFunction('uielements')" class="w3-btn-block w3-left-align w3-zak">UI Elements<span class="w3-right-align w3-right">&#62;</span></button>
+                <div id="uielements" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                    <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
+                    <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                </div>
+          </div>
+      </div>
+    </nav>
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+
+    <!--Search bar--> 
+    <div class="w3-main" style="margin-left:200px;margin-top:44px;">
+            <form>
+                <div class="w3-container w3-rest w3-white w3-padding-16 w3-center">Welcome to BCN School Management System
+                <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+            </form>
+
+      <!-- Header -->
+      <header class=" w3-white">
+          <ul class="w3-bar w3-left-align" style="padding-left:0">
+              <li class="w3-bar-item "><a href="#" class="w3-button w3-round">Home</a></li>
+              <li class="w3-bar-item"><a href="#" class="w3-button w3-round">Student Details</a></li>
+        </ul>
+      </header>
+
+        <!--Student Record container-->
+        <div class="w3-row-padding" style="margin:0 -16px">
+           <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
+               <div class="w3-border-bottom w3-margin-bottom"><h5>Richi Hassan <span>Details</span></h5>
+                   <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>
+               </div>
+               <div class="w3-quarter w3-container w3-clear">
+                   <img src="images/avatar6.png" alt="student" style="width:80%; margin-bottom: 8px; height: 25%">
+                   <div class="w3-rest w3-small">
+                       <span class='w3-margin-right w3-gray'>&#xf1f2;</span>
+                       <span class='w3-margin-right w3-gray'></span>
+                       <span class='w3-margin-right w3-gray'>d</span>
+                       <span class='w3-margin-4 w3-gray'>g</span>
+                   </div>
+               </div>
+               
+             <div class="w3-rest w3-container w3-small" style='margin-bottom: 10%'>
+                 <table style='width:40%; line-height: 200%'>
+                     <thead>
+                     <td class="w3-bold">About Me</td>
+                     <td></td>
+                     </thead>
+                     <tr>
+                         <td><span>Name:</span></td>
+                         <td><span>Muhammed Garba</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Gender:</span></td>
+                         <td><span>Female</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Father Name:</span></td>
+                         <td><span>Muhammed Garba</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Mother Name:</span></td>
+                         <td><span>Muhammed Aisha</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Date of Birth:</span></td>
+                         <td><span>09/09/1992</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Religion:</span></td>
+                         <td><span>Islam</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Father Occupation:</span></td>
+                         <td><span>Businessman</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Section:</span></td>
+                         <td><span>A</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Email:</span></td>
+                         <td><span>Emperor.cruzy@gmail.com</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Admission Date:</span></td>
+                         <td><span>04/04/2014</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Class:</span></td>
+                         <td><span>5</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Section:</span></td>
+                         <td><span>A</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Roll:</span></td>
+                         <td><span>2981</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Address:</span></td>
+                         <td><span>Ta-107 Sydenye Autrialia</span></td>
+                     </tr>
+                     <tr>
+                         <td><span>Phone:</span></td>
+                         <td><span>09098765654</span></td>
+                     </tr>
+                 </table>
+<!--               
+                       <li><p>Admission ID: <span>#4323</span></p></li>
+                       <li><p>Email: <span>Emperor.cruzy@gmail.com</span></p></li>
+                       <li><p>Admission Date <span>20 April, 2012</span></p></li>
+                       <li><p>Class: <span>2</span></p></li>
+              
+                   </ul>-->
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <script src="js/w3js.js"></script>
+    <script>
+
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+    </script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_analytics&stacked=h by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Jan 2018 03:48:59 GMT -->
+</html>
+
