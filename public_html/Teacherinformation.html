@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <title>Student information</title>
+    <title>Teacher information</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/w31.css">
     <link rel="stylesheet" href="css/panelcss.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </style>
@@ -20,7 +22,7 @@
 
         <!-- Sidebar/menu -->
         <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:200px;" id="mySidebar"><br>
-            <div class="w3-container w3-row w3-border-right">
+            <div class="w3-container w3-row">
                 <div class="w3-col s4">
                     <img src="images/avatar2.png" class="w3-circle" style="width:46px">
                 </div>
@@ -191,10 +193,10 @@
             </form>
 
             <!-- Header -->
-            <header class=" w3-white">
+            <header class=" w3-white w3-margin-top">
                 <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="w3-button w3-round">Home</a></li>
-                    <li class="w3-bar-item"><a href="#" class="w3-button w3-round">Student Admit Form</a></li>
+                    <li class="w3-bar-item w3-button w3-round">Home</li>
+                    <li class="w3-bar-item w3-button w3-round">Add New Teacher</li>
                 </ul>
             </header>
 
@@ -209,74 +211,57 @@
                        <div class='w3-row'>
                            <div class='w3-quarterc w3-margin-right'>
                                <p>First Name:</p>
-                                <input type='text' name='fname' id="fname" class='w3-input'>
+                                <input type='text' name='fname' id="fname" class='form-control'>
                                 <p>Gender</p>
-                                <select id='scalss' class='w3-input'>
+                                <select id='scalss' class='form-control'>
                                     <option selected="selected" disabled="disabled">Please Select Gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
                                 </select>
                                 <p>Religion</p>
-                                <input type='text' name='religion' id="religion" class='w3-input'>
-                                <p class='w3-bold'>Parent Information</p>
-                                <p>Father Name</p>
-                                <input type='text' name='fathername' id="fathername" class='w3-input'>
-                               <p>Phone No</p>
-                                <input type='tel' name='phone' id="phone" class='w3-input'>
-                                <p>Upload parent photo (150px x 150px)</p>
-                                <input type='file' name='parentpicture'>
+                                <input type='text' name='religion' id="religion" class='form-control'>
+                                <p>Upload Teacher Photo (150px x 150px)</p>
+                                <input type="file" name="teacherpx">
                                 <br><br>
-                               <button class='w3-button w3-round-large w3-yellow'>Save</button>
-                               <button class='w3-button w3-round-large w3-blue'>Reset</button>
+                               <button class='btn btn-outline-primary'>Save</button>
+                               <button class='btn btn-outline-danger'>Reset</button>
                                 <br><br>
                             </div>
                            
                            <div class='w3-quarterc w3-margin-right'>
                                <p>Last Name</p>
-                                <input type='text' name='lanem' id="lname" class='w3-input'>
+                                <input type='text' name='lanem' id="lname" class='form-control'>
                                 <p>Date of Birth</p>
-                                <input type='date' name='dob' id="dob" class='w3-input'>
+                                <input type='date' name='dob' id="dob" class='form-control'>
                                <p>Email</p>
-                                <input type='email' name='email' id="email" class='w3-input'>
+                                <input type='email' name='email' id="email" class='form-control'>
                                 <br/><br/>
-                                <p>Mother Name</p>
-                                <input type='text' name='mothername' id="mothername" class='w3-input'>
-                                <p>Nationality</p>
-                                <input type='text' name='nationality' id="nationality" class='w3-input'>
                            </div>
                            
                            <div class='w3-quarterc w3-margin-right'>
                                <p>Class</p>
-                               <select id='scalss' class='w3-input'>
+                               <select id='scalss' class='form-control'>
                                     <option selected="selected" disabled="disabled">Please Select Class</option>
                                     <option>Class 1</option>
                                     <option>Class 2</option>
                                 </select>
-                                <p>Roll</p>
-                                <input type='text' name='roll' id="roll" class='w3-input'>
-                                <p class='w3-small'>Upload student photo (150px x 150px)</p>
-                                <input type='file' name='studentphonto'>
-                                <br/><br/><br/><br/>
-                                <p>Father Occupation</p>
-                                <input type='text' name='fatheroccupation' id="fatheroccupation" class='w3-input'>
-                                <p>Present Address</p>
-                                <input type='text' name='presentaddress' id="presentaddress" class='w3-input'>
+                                <p>ID No</p>
+                                <input type='text' name='idno' id="idno" class='form-control'>
+                               <p>Phone No</p>
+                                <input type='tel' name='phone' id="phone" class='form-control'>
                            </div>
                            
                            <div class='w3-quarterc'>
                                <p>Section</p>
-                               <select id='section' class='w3-input'>
+                               <select id='section' class='form-control'>
                                     <option selected="selected" disabled="disabled">Please Select Section</option>
                                     <option>Section 1</option>
                                     <option>Section 2</option>
                                 </select>
-                                <p>Admission No</p>
-                                <input type='text' name='admissionno' id="admissionno" class='w3-input'>
-                                <br/><br/><br/><br/><br/><br/>
-                                <p>Mother Occupation</p>
-                                <input type='text' name='motheroccupation' id="motherocupation" class='w3-input'>
-                                <p>Permanent Address</p>
-                                <input type='text' name='permentaddress' class='w3-input'>
+                                <p>Subject</p>
+                                <input type='text' name='admissionno' id="admissionno" class='form-control'>
+                                <p>Address</p>
+                                <input type='text' name='address' id="address" class='form-control'>
                            </div>
                         </div>
                     </form>
