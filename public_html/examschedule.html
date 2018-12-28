@@ -20,158 +20,155 @@
         </div>
 
         <!-- Sidebar/menu -->
-        <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:200px;" id="mySidebar">
-            <div class="w3-container w3-padding-24 w3-amber">
+        <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar">
+           
+            <div class="w3-container w3-padding-24 w3-amber w3-left w3-mobile" style="width:250px;">
                 <span>Nikel School</span>
             </div>
+            
             <!--dashboard-->
-
-            <div class="w3-bar-block">
+        <div class="w3-bar-block" id="accordion">
                 <div class="w3-accordion">
-                    <button onclick="myFunction('dashboard')" class="w3-btn-block w3-left-align w3-zak">Dashboard<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('dashboard')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-dashboard"></span>  Dashboard</button>                     
                     <div id="dashboard" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="index.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Admin</a>
+                        <a href="studentrecord.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Student</a>
+                        <a href="parent2.html"  target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
                     </div>
                 </div> 
 
                 <div class="w3-accordion">
-                    <button onclick="myFunction('students')" class="w3-btn-block w3-left-align w3-zak">Students<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('students')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-users"></span> Students</button>
                     <div id="students" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="allstudents.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Students</a>
+                        <a href="studentdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Student Details</a>
+                        <a href="studentAdmitForm.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>
+                        <a href="studentpromotion.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Students Promotion</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('teachers')" class="w3-btn-block w3-left-align w3-zak">Teachers<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('teachers')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-md"></span> Teachers</button>
                     <div id="teachers" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="allteachers.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Teachers</a>
+                        <a href="teacherdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Teacher Details</a>
+                        <a href="addnewteacher.html" class="w3-button w3-left-align"><span>&#9758; </span>Add Teachers</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('parents')" class="w3-btn-block w3-left-align w3-zak">Parents<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('parents')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-plus "></span> Parents</button>
                     <div id="parents" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="allparents.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Parent</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('library')" class="w3-btn-block w3-left-align w3-zak">Library<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('library')" class="w3-btn-block w3-left-align w3-zak"> <span class="fa fa-book"></span> Library</button>
                     <div id="library" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="allbooks.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Books</a>
+                        <a href="addnewbook.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Book</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak">Account<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-briefcase"></span> Account</button>
                     <div id="account" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="studentcollectionfee.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Fees Collection</a>
+                        <a href="paymentinformation.html" class="w3-button w3-left-align"><span>&#9758; </span>Create Student Payment</a>
+                        <a href="allexpenseslist.html" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('demo1')" class="w3-btn-block w3-left-align w3-zak">Class<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('demo1')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-calculator"></span> Class</button>
                     <div id="demo1" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="allclasses.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Classes</a>
+                        <a href="addnewclass.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Class</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('subject')" class="w3-btn-block w3-left-align w3-zak">Subject<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('subject')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-columns"></span> Subject</button>
                     <div id="subject" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="creatnewsubject.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Create New Subject</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('classrountine')" class="w3-btn-block w3-left-align w3-zak">Class Routine<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('classrountine')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-joomla"></span> Class Routine</button>
                     <div id="classrountine" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="classroutine.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Class Routine</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('attendance')" class="w3-btn-block w3-left-align w3-zak">Attendance<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('attendance')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-server"></span> Attendance</button>
                     <div id="attendance" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="attendance.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Attendance</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak">Exam<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-graduation-cap"></span> Exam</button>
                     <div id="exam" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="examschedule.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Exam Schedule</a>
+                        <a href="examgrade.html" class="w3-button w3-left-align"><span>&#9758; </span>Exam Grade</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('transport')" class="w3-btn-block w3-left-align w3-zak">Transport<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('transport')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-automobile"></span> Transport</button>
                     <div id="transport" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="addnewtransport.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Transport</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('hostel')" class="w3-btn-block w3-left-align w3-zak">Hostel<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('hostel')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-building"></span> Hostel</button>
                     <div id="hostel" class="w3-accordion-content w3-bar-block">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="addnewroom.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Hostel</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('notice')" class="w3-btn-block w3-left-align w3-zak">Notice<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('notice')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-pencil-square-o"></span> Notice</button>
                     <div id="notice" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Admin</a>
+                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Student</a>
+                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('message')" class="w3-btn-block w3-left-align w3-zak">Message<span class="w3-right-align w3-right">&#62;</span></button>
+                    <button onclick="myFunction('message')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-envelope-o"></span> Message</button>
                     <div id="message" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Admin</a>
+                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Student</a>
+                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('uielements')" class="w3-btn-block w3-left-align w3-zak">UI Elements<span class="w3-right-align w3-right">&#62;</span></button>
-                    <div id="uielements" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button"><span>&#9758; </span>Parents</a>
+                    <button onclick="myFunction('map')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-map-marker"></span> Map</button>
+                    <div id="map" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Admin</a>
+                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Student</a>
+                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
+                    </div>
+                </div>
+
+                <div class="w3-accordion w3-green">
+                    <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-cog"></span> Account</button>
+                    <div id="account" class="w3-accordion-content w3-bar-block w3-zakcontent">
+                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Admin</a>
+                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Student</a>
+                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
                     </div>
                 </div>
             </div>
             <br/><br/>
+            
         </nav>
 
 
@@ -181,7 +178,7 @@
         <!-- !PAGE CONTENT! -->
 
         <!--Search bar--> 
-        <div class="w3-main" style="margin-left:200px;margin-top:44px;">
+        <div class="w3-main" style="margin-left:250px;margin-top:44px;">
             <form>
                 <div class="w3-container w3-rest w3-white w3-padding-16 w3-center">School Management System
                     <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>

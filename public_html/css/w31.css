@@ -175,6 +175,9 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-rest{overflow:hidden}
 .w3-hide{display:none !important}.w3-show-block,.w3-show{display:block !important}.w3-show-inline-block{display:inline-block !important}
 @media (max-width:601px){.w3-modal-content{margin:50px 10px 10px 10px;width:auto !important}}
+@media (max-width:601px){.fam{margin-bottom:4px; width:100% !important} .tabaline{margin-top:200px;}}
+
+
 @media (max-width:768px){.w3-modal-content{width:500px}}
 @media (min-width:992px){.w3-modal-content{width:900px}}
 @media screen and (max-width:601px){.w3-topnav a{display:block}.w3-navbar li{float:none}.w3-navbar div.w3-right,.w3-navbar li.w3-right{float:none !important;margin:0;padding:0}}	

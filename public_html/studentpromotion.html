@@ -3,10 +3,11 @@
     <title>School Management System</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/w31.css">
-    <link rel="stylesheet" href="css/panelcss.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/font/css/font-awesome.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/w31.css">
+        <link rel="stylesheet" href="css/panelcss.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">  
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </style>
@@ -20,14 +21,13 @@
 
         <!-- Sidebar/menu -->
         <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:200px;" id="mySidebar"><br>
-            <div class="w3-container w3-row w3-border-right">
+            <div class="w3-container w3-row">
                 <div class="w3-col s4">
                     <img src="images/avatar2.png" class="w3-circle" style="width:46px">
                 </div>
-                <span class="w3-left"><span>Richi<br /><span>Student</span></span></span>
+                <span class="w3-left w3-margin-bottom"><span>Richi<br /><span>Student</span></span></span>
             </div>
-            <hr>
-
+    
             <!--dashboard-->
 
             <div class="w3-bar-block">
@@ -185,9 +185,9 @@
 
         <!--Search bar--> 
         <div class="w3-main" style="margin-left:200px;margin-top:44px;">
-            <form>
+            <form class="w3-margin-bottom">
                 <div class="w3-container w3-rest w3-white w3-padding-16 w3-center">Welcome to BCN School Management System
-                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 form-control w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
             </form>
 
             <!-- Header -->
@@ -209,7 +209,7 @@
                        <div class='w3-row'>
                            <div class='w3-quarterc w3-margin-right'>
                                <p>Current Session</p>
-                                <select id='currentsession' class='w3-input'>
+                                <select id='currentsession' class='form-control'>
                                     <option selected="selected" disabled="disabled">Please Select Section</option>
                                     <option>Section 1</option>
                                     <option>Section 2</option>
@@ -221,7 +221,7 @@
                            
                            <div class='w3-quarterc w3-margin-right'>
                                <p>Promote To Session</p>
-                                <select id='promotesession' class='w3-input'>
+                                <select id='promotesession' class='form-control'>
                                     <option selected="selected" disabled="disabled">Please Select Section</option>
                                     <option>Section 1</option>
                                     <option>Section 2</option>
@@ -229,7 +229,7 @@
                            
                            <div class='w3-quarterc w3-margin-right'>
                                <p>Promote From Class</p>
-                               <select id='promotefromcalss' class='w3-input'>
+                               <select id='promotefromcalss' class='form-control'>
                                     <option selected="selected" disabled="disabled">Please Select Class</option>
                                     <option>Class 1</option>
                                     <option>Class 2</option>
@@ -238,7 +238,7 @@
                            
                            <div class='w3-quarterc'>
                                <p>Promote To Class</p>
-                               <select id='promotetoclass' class='w3-input'>
+                               <select id='promotetoclass' class='form-control'>
                                     <option selected="selected" disabled="disabled">Please Select Section</option>
                                     <option>Section 1</option>
                                     <option>Section 2</option>
