@@ -201,42 +201,30 @@
 
                     <!--container to create a new subject-->
                     <div class='w3-row w3-light-gray'>
-                        <div class='w3-white w3-left w3-mobile w3-container' style="height:px; width: 60%">
+                        <div class='w3-white w3-left w3-mobile w3-container' style="width: 60%">
                             <div class="w3-border-bottom w3-margin-bottom w3-padding-bottom w3-bold w3-padding-top w3-mobile">Write New Message
                                 <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>
                             </div>
 
-                            <div class="w3-container">
+                            <div class="w3-container w3-mobile">
                                 <form style="width: 98%" >
 
                                     <div class="form-group">
                                         <label>Title</label>
-                                        <input type='text' name='fname' id="fname" class='form-control'>
+                                        <input type='text' name='title' id="title" class='form-control'>
                                     </div>
 
                                     <div class="form-group">
                                         <label>Recipient</label>
-                                        <input type='text' name='vehiclename' id="vehiclename" class='form-control'>
+                                        <input type='text' name='recipient' id="recipient" class='form-control'>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label>Driver Name</label>
-                                        <input type="text" class="form-control" name="drivername">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>License Number</label>
-                                        <input type="text" class="form-control" name="licensenumber">
-                                    </div>
-
-                                    <div class="w3-rest w3-row">
-                                        <div class="form-group w3-small">
-                                            <label>Phone Number</label>
-                                            <input type="tel" name="phone" class="phonenumber form-control">
-                                        </div>
+                                    <div class="w3-mobile w3-margin-bottom">
+                                        <label>Message</label>
+                                        <textarea cols="80" rows="6" style="resize: none" class="w3-mobile" placeholder="work on the responsiveness of this message  box"></textarea>
                                     </div>
                                     <div>
-                                        <button class="btn btn-outline-success">Submit</button>
+                                        <button class="btn btn-outline-success">Send Message</button>
                                     <br/><br/>
                                     </div>
 
@@ -246,8 +234,8 @@
                         <!--All container for displaying all results-->
                         <div class="w3-right w3-container w3-mobile" style="width: 40%;">
                             <!--This container hold the result table-->
-                            <div class="w3-rest w3-white w3-container" style="height:428px; padding-left:1%">
-                                <p>All transport lists display here</p>
+                            <div class="w3-rest w3-white w3-container w3-mobile" style="height:428px; padding-left:1%">
+                                <p class="w3-border-bottom w3-padding-32 w3-bold w3-text-blue w3-center">SENT MESSAGE INFORMATION</p>
                             </div>
 
                         </div>

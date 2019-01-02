@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/w31.css">
     <link rel="stylesheet" href="css/panelcss.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/font/css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
@@ -181,7 +181,7 @@
         <div class="w3-main" style="margin-left:250px;margin-top:44px;">
             <form>
                 <div class="w3-container w3-rest w3-white w3-padding-16 w3-center">School Management System
-                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-mobile w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
             </form>
 
             <!-- Header -->
@@ -198,7 +198,7 @@
                    
                     <!--container to create a new subject-->
                     <div class='w3-row w3-light-gray'>
-                      <div class='w3-white w3-left' style="height:498px; width: 25%">
+                      <div class='w3-white w3-left w3-mobile' style="height:498px; width: 25%">
                           <div class="w3-border-bottom w3-margin-bottom w3-padding-bottom w3-bold w3-padding-top">Add New Exam
                                 <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>
                           </div>
@@ -236,15 +236,15 @@
                                 </select>
                </div>
                             
-                            <div class="w3-rest w3-row">
-                                <div class="w3-half">
+                            <div class="w3-rest w3-container w3-row">
+                                <div class="w3-mobile">
                                     <div class="form-group w3-small">
                                         <label>Time</label>
                                         <input type="time" name="time" class="form-control">
                                     </div>
                                 </div>
                                 
-                                <div class="w3-half w3- w3-small">
+                                <div class="w3- w3-small w3-mobile">
                                     <div class="form-group">
                                         <label>Select Date</label>
                                         <input type="date" name="date" class="form-control">
@@ -253,21 +253,21 @@
                             </div>
                             <div>
                                 <button class="btn btn-outline-primary">Submit</button>
-                                <br/><br/>
+                              <br/><br/><br/><br/>
                             </div>
                             </form> 
                         </div>
         <!--All container for displaying all results-->
-                        <div class="w3-container w3-right" style="width: 75%">
+                        <div class="w3-container w3-mobile w3-right spacedwon" style="width: 75%">
                             
                             <form class="w3-border-bottom">
                                 
-                                <div class="w3-container w3-white w3-padding-16"><span class="w3-left w3-bold" style="margin-right:16%">All Subjects</span>
-                                <input style="width: 15%; padding-left:1%" type="text" name="code" placeholder="# Code" class="w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
-                                <input style="width: 15%; padding-left:1%" type="text" name="class" placeholder="Class..." class="w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
-                                <input style="width: 15%; padding-left:1%" type="text" name="subject" placeholder="Subject..." class="w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
-                                <span style="width: 15%" class="w3-round-large w3-blue w3-padding-4 w3-button w3-small">Search</span>
-                                </div>
+                              <div class="w3-container w3-white w3-padding-16"><span class="w3-left w3-bold" style="margin-right:16%">All Subjects</span>
+                                <input style="width: 15%; padding-left:1%" type="text" name="code" placeholder="# Code" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
+                                <input style="width: 15%; padding-left:1%" type="text" name="class" placeholder="Class..." class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
+                                <input style="width: 15%; padding-left:1%" type="text" name="subject" placeholder="Subject..." class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
+                                <span style="width: 15%" class="w3-round-large w3-blue w3-padding-4 w3-button w3-small w3-mobile">Search</span>
+                              </div>
                             </form>
                             <!--This container hold the result table-->
                             <div class="w3-rest w3-white" style="height:428px; padding-left:1%">
