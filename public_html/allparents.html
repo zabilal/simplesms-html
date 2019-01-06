@@ -25,11 +25,13 @@
         </div>
 
         <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar">
-            
-     <div class="w3-container w3-padding-24 w3-amber w3-left w3-mobile" style="width:250px;">
-                <span>Nikel School</span>
-          </div>
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
+            <div class="w3-container w3-row">
+                <div class="w3-col s4">
+                    <img src="images/avatar2.png" class="w3-circle" style="width:46px" alt="student">
+                </div>
+                <span class="w3-left w3-margin-bottom"><span>Richi<br /><span>Student</span></span></span>
+            </div>
             
             <!--dashboard-->
         <div class="w3-bar-block" id="accordion">
@@ -77,15 +79,6 @@
                 </div>
 
                 <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-briefcase"></span> Account</button>
-                    <div id="account" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="studentcollectionfee.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Fees Collection</a>
-                        <a href="paymentinformation.html" class="w3-button w3-left-align"><span>&#9758; </span>Create Student Payment</a>
-                        <a href="allexpenseslist.html" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
                     <button onclick="myFunction('demo1')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-calculator"></span> Class</button>
                     <div id="demo1" class="w3-accordion-content w3-bar-block w3-zakcontent">
                         <a href="allclasses.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Classes</a>
@@ -118,7 +111,7 @@
                     <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-graduation-cap"></span> Exam</button>
                     <div id="exam" class="w3-accordion-content w3-bar-block w3-zakcontent">
                         <a href="examschedule.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Exam Schedule</a>
-                        <a href="examgrade.html" class="w3-button w3-left-align"><span>&#9758; </span>Exam Grade</a>
+                        <a href="addnewgrade.html" class="w3-button w3-left-align"><span>&#9758; </span>Exam Grade</a>
                     </div>
                 </div>
 
@@ -132,43 +125,29 @@
                 <div class="w3-accordion w3-green">
                     <button onclick="myFunction('hostel')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-building"></span> Hostel</button>
                     <div id="hostel" class="w3-accordion-content w3-bar-block">
-                        <a href="addnewroom.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Hostel</a>
+                        <a href="addnewroom.html" class="w3-button w3-left-align w3-bar-block w3-left-align "><span class="w3-left-align">&#9758; </span>Hostel</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
                     <button onclick="myFunction('notice')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-pencil-square-o"></span> Notice</button>
                     <div id="notice" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
+                        <a href="noticeboard.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Notice</a>
+                     
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
                     <button onclick="myFunction('message')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-envelope-o"></span> Message</button>
                     <div id="message" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('map')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-map-marker"></span> Map</button>
-                    <div id="map" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
+                        <a href="message.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Message</a>
                     </div>
                 </div>
 
                 <div class="w3-accordion w3-green">
                     <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-cog"></span> Account</button>
                     <div id="account" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Admin</a>
-                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Student</a>
-                        <a href="#" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
+                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Account</a>
                     </div>
                 </div>
             </div>

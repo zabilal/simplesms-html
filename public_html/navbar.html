@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <meta charset="UTF-8">
-        <title>All classes</title>
-        <link rel="stylesheet" href="css/font/css/font-awesome.css">
-        <link rel="stylesheet" href="css/w3.css">
-        <link rel="stylesheet" href="css/w31.css">
-        <link rel="stylesheet" href="css/panelcss.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">  
-
-        <style>
-            html,body,h1,h2,h3,h4,h5{font-family: "Raleway", sans-serif}
-        </style>
-    </head>
-
+    <title>Add New Grade</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/w31.css">
+    <link rel="stylesheet" href="css/panelcss.css">
+    <link rel="stylesheet" href="css/font/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    </style>
     <body class="w3-light-grey">
 
-        <!-- Top container -->
-        <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-            <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-            <span class="w3-bar-item w3-right">Logo</span>
-        </div>
-
         <!-- Sidebar/menu -->
-     <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
+        <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
             <div class="w3-container w3-row">
                 <div class="w3-col s4">
                     <img src="images/avatar2.png" class="w3-circle" style="width:46px" alt="student">
@@ -158,54 +147,6 @@
         <!-- Overlay effect when opening sidebar on small screens -->
         <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-        <!-- !PAGE CONTENT! -->
-           <div class="w3-main" style="margin-left:250px; margin-top:44px">
-             
-            <form class="w3-mobile">
-                <div class="w3-container w3-rest w3-white w3-padding-16 w3-center w3-mobile">School Management System
-                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-mobile w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
-            </form>
-
-            <!-- Header -->
-            <header class=" w3-white w3-margin-top">
-                <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="w3-button w3-round">Home</a></li>
-                    <li class="w3-bar-item"><a href="#" class="w3-button w3-round">All Classes</a></li>
-                </ul>
-            </header>
-
-            <!--Student Record container-->
-            <div class="w3-row-padding" style="margin:0 -16px;">
-                <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
-
-                    <!--container to create a new subject-->
-                    <div class='w3-row w3-light-gray'>
-                        <div class='w3-white w3-left w3-mobile' style="height:px; width: 25%">
-                            
-                                                            
-                            </div>
-                        </div>
-                        <!--All container for displaying all results-->
-                        <div class="w3-left w3-mobile" style="width:100%">
-
-                            <form class="w3-border-bottom">
-
-                                <div class="w3-container w3-white w3-padding-16"><span class="w3-left w3-bold" style="margin-right:16%">All Class Schedule</span>
-                                    <input style="width: 12%; padding-left:1%" type="text" name="hostelname" placeholder="Hostel Name" class=" fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
-                                    <input style="width: 10%; padding-left:1%" type="text" name="room" placeholder="Room" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
-                                    <input style="width: 15%; padding-left:1%" type="text" name="bed" placeholder="Bed" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
-                                    <span style="width: 15%" class="w3-round-large w3-blue w3-padding-4 btn btn-primary w3-small w3-mobile">Search</span>
-                                </div>
-                            </form>
-                            <!--This container hold the result table-->
-                            <div class="w3-rest w3-white w3-container" style="height:428px; padding-left:1%">
-                                <p>Fees collection list display here</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
         <script src="js/w3js.js"></script>
         <script>
 
