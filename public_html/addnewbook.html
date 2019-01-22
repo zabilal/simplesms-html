@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+        .clear-addon-background{background: none !important; border: none !important;}
+        .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
+        .w3-row .w3-half .input-group{margin-top: 1rem}
     </style>
     <body class="w3-light-grey">
 
@@ -20,135 +23,9 @@
         </div>
 
         <!-- Sidebar/menu -->
-         <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
-            <div class="w3-container w3-row">
-                <div class="w3-col s4">
-                    <img src="images/avatar2.png" class="w3-circle" style="width:46px" alt="student">
-                </div>
-                <span class="w3-left w3-margin-bottom"><span>Richi<br /><span>Student</span></span></span>
-            </div>
-            
-            <!--dashboard-->
-        <div class="w3-bar-block" id="accordion">
-                <div class="w3-accordion">
-                    <button onclick="myFunction('dashboard')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-dashboard"></span>  Dashboard</button>                     
-                    <div id="dashboard" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="index.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Admin</a>
-                        <a href="studentrecord.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Student</a>
-                        <a href="parent2.html"  target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
-                    </div>
-                </div> 
-
-                <div class="w3-accordion">
-                    <button onclick="myFunction('students')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-users"></span> Students</button>
-                    <div id="students" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allstudents.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Students</a>
-                        <a href="studentdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Student Details</a>
-                        <a href="studentAdmitForm.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>
-                        <a href="studentpromotion.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Students Promotion</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('teachers')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-md"></span> Teachers</button>
-                    <div id="teachers" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allteachers.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Teachers</a>
-                        <a href="teacherdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Teacher Details</a>
-                        <a href="addnewteacher.html" class="w3-button w3-left-align"><span>&#9758; </span>Add Teachers</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('parents')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-plus "></span> Parents</button>
-                    <div id="parents" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allparents.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Parent</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('library')" class="w3-btn-block w3-left-align w3-zak"> <span class="fa fa-book"></span> Library</button>
-                    <div id="library" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allbooks.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Books</a>
-                        <a href="addnewbook.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Book</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('demo1')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-calculator"></span> Class</button>
-                    <div id="demo1" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allclasses.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Classes</a>
-                        <a href="addnewclass.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Class</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('subject')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-columns"></span> Subject</button>
-                    <div id="subject" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="creatnewsubject.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Create New Subject</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('classrountine')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-joomla"></span> Class Routine</button>
-                    <div id="classrountine" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="classroutine.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Class Routine</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('attendance')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-server"></span> Attendance</button>
-                    <div id="attendance" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="attendance.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Attendance</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-graduation-cap"></span> Exam</button>
-                    <div id="exam" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="examschedule.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Exam Schedule</a>
-                        <a href="addnewgrade.html" class="w3-button w3-left-align"><span>&#9758; </span>Exam Grade</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('transport')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-automobile"></span> Transport</button>
-                    <div id="transport" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="addnewtransport.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Transport</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('hostel')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-building"></span> Hostel</button>
-                    <div id="hostel" class="w3-accordion-content w3-bar-block">
-                        <a href="addnewroom.html" class="w3-button w3-left-align w3-bar-block w3-left-align "><span class="w3-left-align">&#9758; </span>Hostel</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('notice')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-pencil-square-o"></span> Notice</button>
-                    <div id="notice" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="noticeboard.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Notice</a>
-                     
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('message')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-envelope-o"></span> Message</button>
-                    <div id="message" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="message.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Message</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-cog"></span> Account</button>
-                    <div id="account" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Account</a>
-                    </div>
-                </div>
-            </div>
-            <br/><br/>
-            
-        </nav>
+        <div>
+            <div  w3-include-html="navbar.html"></div>
+        </div>
 
         <!-- Overlay effect when opening sidebar on small screens -->
         <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -156,90 +33,93 @@
         <!-- !PAGE CONTENT! -->
 
         <!--Search bar--> 
-        <div class="w3-main" style="margin-left:250px;margin-top:44px;">
+        <div class="w3-main w3-container" style="margin-left:250px;margin-top:44px;">
             <form>
-                <div class="w3-container w3-rest w3-white w3-padding-16 w3-center">Welcome to BCN School Management System
-                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+                <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3>
+                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-mobile w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
             </form>
 
             <!-- Header -->
             <header class=" w3-white w3-margin-top">
                 <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="w3-button w3-round">Home</a></li>
-                    <li class="w3-bar-item"><a href="#" class="w3-button w3-round">Add New Book</a></li>
+                    <li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>
+                    <!--<li class="w3-bar-item"><a href="#" class="btn w3-blue">Add New Book</a></li>-->
                 </ul>
             </header>
 
             <!--Student Record container-->
-            <div class="w3-row-padding" style="margin:0 -16px">
-                <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
-                    <div class="w3-border-bottom w3-margin-bottom w3-padding"><span class="w3-bold">Book Information</span>
-                        <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>
+            <div class="w3-row-padding w3-container" style="margin:0 -16px">
+                <div class="w3-padding-left w3-white w3-container" style="height: 50%; box-sizing: border-box;">
+                    <div class="w3-border-bottom w3-margin-bottom w3-padding-16 w3-padding-left w3-blue"><h4 >Add New Book</h4>
+                        <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>-->
                     </div>
                    <!--student forms begins here-->
-                   <form>
-                       <div class='w3-row'>
-                           <div class='w3-quarterc w3-margin-right'>
-                               <div class="form-group">
-                                   <label>Book Name</label>
-                                    <input type='text' name='fname' id="fname" class='form-control'>
-                               </div>
-                               
-                               <div class="form-group">
-                                   <label>Publishing Year</label>
-                                    <input type='text' name='publishingyear' id="publishingyear" class='form-control'>
-                               </div>
-                                
-                               <br>
-                               <button class='w3-button w3-round-large w3-yellow'>Save</button>
-                               <button class='w3-button w3-round-large w3-blue'>Reset</button>
-                                <br><br>
-                            </div>
-                           
-                           <div class='w3-quarterc w3-margin-right'>
-                               <div class="form-group">
-                                   <label>Subject</label>
-                                    <input type='text' name='subject' id="subject" class='form-control'>
-                               </div>
-                               
-                               <div class="form-group">
-                                   <label>Upload Date</label>
-                                   <input type='date' name='uploaddate' id="uploaddate" class='form-control'>
-                               </div>
-                            </div>
-                           
-                           <div class='w3-quarterc w3-margin-right'>
-                               <div class="form-group">
-                                   <label>Writer Name</label>
-                                   <input type='text' name='writername' id="writername" class='form-control'>
-                               </div>
-                               
-                               <div class="form-group">
-                                   <label>ID No</label>
-                                <input type='text' name='idno' id="idno" class='form-control'>
-                               </div>
-                                
-                           </div>
-                           
-                           <div class='w3-quarterc'>
-                               <div class="form-group">
-                                  <label>Class</label>
-                                  <input type='text' name='admissionno' id="admissionno" class='form-control'> 
-                               </div>
-                               
-                           </div>
+
+                    <div class="w3-row">
+                        <!--<div class="w3-half" style="margin-left: 200px;">-->
+                        <div class="w3-half w3-col s12 m12 l6 offset-lg-3">
+                            <form>
+
+                                <div class="input-group">
+                                    <i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
+                                    <input type='text' name='fname' id="fname" class='w3-input' placeholder="Book Name">
+                                </div>
+
+                                <div class="input-group">
+                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
+                                    <input type='text' name='subject' id="subjet" class='w3-input' placeholder="Subject">
+                                </div>
+
+                                <div class="input-group">
+                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
+                                    <input type='text' name='category' id="category" class='w3-input' placeholder="Category">
+                                </div>
+
+                                <div class="input-group">
+                                    <i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
+                                    <input type='text' name='authorname' id="authorname" class='w3-input' placeholder="Author Name">
+                                </div>
+
+                                <div class="input-group">
+                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
+                                    <input type='text' name='class' id="class" class='w3-input' placeholder="Class">
+                                </div>
+
+                                <div class="input-group">
+                                    <i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
+                                    <input type='date' name='publishingyear' id="publishingyear" class='w3-input'>
+                                </div>
+
+                                <!--&lt;!&ndash;<div class="input-group">&ndash;&gt;-->
+                                    <!--<label>Upload Date</label>-->
+                                    <!--&lt;!&ndash;<i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>&ndash;&gt;-->
+                                    <!--<input type='date' name='uploaddate' id="uploaddate" class='w3-input' placeholder="Upload Date">-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                                <div class="input-group">
+                                    <i class="fa fa-id-card w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
+                                    <input type='number' name='isbn' id="isbn" class='w3-input' placeholder="ISBN No">
+                                </div>
+                                <br/>
+                                <button class="btn w3-blue w3-col s12 m3 l3">Add Book</button>
+                                <br/><br/>
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
+        </div>
         </div>
         <script src="js/w3js.js"></script>
+        <script src="js/w3.js"></script>
+
+        <script>
+            w3.includeHTML(myCallback);
+            function myCallback() {
+            }
+        </script>
+
         <script>
 
-            // Get the Sidebar
-            var mySidebar = document.getElementById("mySidebar");
-
-            // Get the DIV with overlay effect
             var overlayBg = document.getElementById("myOverlay");
 
             // Toggle between showing and hiding the sidebar, and add overlay effect

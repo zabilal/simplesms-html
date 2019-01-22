@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/w31.css">
-    <link rel="stylesheet" href="css/panelcss.css">
     <link rel="stylesheet" href="css/font/css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+        .w3-input:focus{outline: none; border-bottom-color: teal; border-bottom-width: medium}
+        .w3-row .w3-half .input-group{margin-top: 1rem}
+        .clear-addon-background{background: none!important; border: none!important;}
     </style>
     <body class="w3-light-grey">
 
@@ -20,142 +22,16 @@
         </div>
 
             <!--dashboard-->
-       <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
-            <div class="w3-container w3-row">
-                <div class="w3-col s4">
-                    <img src="images/avatar2.png" class="w3-circle" style="width:46px" alt="student">
-                </div>
-                <span class="w3-left w3-margin-bottom"><span>Richi<br /><span>Student</span></span></span>
-            </div>
-            
-            <!--dashboard-->
-        <div class="w3-bar-block" id="accordion">
-                <div class="w3-accordion">
-                    <button onclick="myFunction('dashboard')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-dashboard"></span>  Dashboard</button>                     
-                    <div id="dashboard" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="index.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Admin</a>
-                        <a href="studentrecord.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Student</a>
-                        <a href="parent2.html"  target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
-                    </div>
-                </div> 
-
-                <div class="w3-accordion">
-                    <button onclick="myFunction('students')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-users"></span> Students</button>
-                    <div id="students" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allstudents.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Students</a>
-                        <a href="studentdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Student Details</a>
-                        <a href="studentAdmitForm.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>
-                        <a href="studentpromotion.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Students Promotion</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('teachers')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-md"></span> Teachers</button>
-                    <div id="teachers" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allteachers.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Teachers</a>
-                        <a href="teacherdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Teacher Details</a>
-                        <a href="addnewteacher.html" class="w3-button w3-left-align"><span>&#9758; </span>Add Teachers</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('parents')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-plus "></span> Parents</button>
-                    <div id="parents" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allparents.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Parent</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('library')" class="w3-btn-block w3-left-align w3-zak"> <span class="fa fa-book"></span> Library</button>
-                    <div id="library" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allbooks.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Books</a>
-                        <a href="addnewbook.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Book</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('demo1')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-calculator"></span> Class</button>
-                    <div id="demo1" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allclasses.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Classes</a>
-                        <a href="addnewclass.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Class</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('subject')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-columns"></span> Subject</button>
-                    <div id="subject" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="creatnewsubject.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Create New Subject</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('classrountine')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-joomla"></span> Class Routine</button>
-                    <div id="classrountine" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="classroutine.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Class Routine</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('attendance')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-server"></span> Attendance</button>
-                    <div id="attendance" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="attendance.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Attendance</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-graduation-cap"></span> Exam</button>
-                    <div id="exam" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="examschedule.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Exam Schedule</a>
-                        <a href="addnewgrade.html" class="w3-button w3-left-align"><span>&#9758; </span>Exam Grade</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('transport')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-automobile"></span> Transport</button>
-                    <div id="transport" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="addnewtransport.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Transport</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('hostel')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-building"></span> Hostel</button>
-                    <div id="hostel" class="w3-accordion-content w3-bar-block">
-                        <a href="addnewroom.html" class="w3-button w3-left-align w3-bar-block w3-left-align "><span class="w3-left-align">&#9758; </span>Hostel</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('notice')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-pencil-square-o"></span> Notice</button>
-                    <div id="notice" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="noticeboard.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Notice</a>
-                     
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('message')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-envelope-o"></span> Message</button>
-                    <div id="message" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="message.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Message</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-cog"></span> Account</button>
-                    <div id="account" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Account</a>
-                    </div>
-                </div>
-            </div>
-            <br/><br/>
-            
-        </nav>
+        <div>
+            <div  w3-include-html="navbar.html"></div>
+        </div>
         <!-- Overlay effect when opening sidebar on small screens -->
         <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
         <!-- !PAGE CONTENT! -->
 
         <!--Search bar--> 
-        <div class="w3-main" style="margin-left:250px;margin-top:44px;">
+        <div class="w3-main w3-container" style="margin-left:250px;margin-top:44px;">
             <form>
                 <div class="w3-container w3-rest w3-white w3-padding-16 w3-center">School Management System
                     <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
@@ -174,53 +50,56 @@
                 <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
                    
                     <!--container to create a new subject-->
-                    <div class='w3-row w3-light-gray'>
-                      <div class='w3-white w3-left' style="height:498px; width: 25%">
-                          <div class="w3-border-bottom w3-margin-bottom w3-padding-bottom w3-bold w3-padding-top">Add New Transport
-                                <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>
+                    <div class='w3-row'>
+                      <div class="w3-border-bottom w3-blue w3-margin-bottom w3-padding-bottom w3-bold w3-padding-16 w3-padding-left">Add New Transport
+                                <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>-->
                           </div>
-                        <form style="width: 98%" >
-                               
-                            <div class="form-group">
-                                <label>Rute Name</label>
-                                <input type='text' name='fname' id="fname" class='form-control'>
-                            </div>
-                                
-                            <div class="form-group">
-                                <label>Vehicle Name</label>
-                                <input type='text' name='vehiclename' id="vehiclename" class='form-control'>
-                            </div>
-                                
-                            <div class="form-group">
-                                <label>Driver Name</label>
-                                <input type="text" class="form-control" name="drivername">
-                            </div>
-                                
-                            <div class="form-group">
-                                <label>License Number</label>
-                                <input type="text" class="form-control" name="licensenumber">
-                            </div>
-                            
-                            <div class="w3-rest w3-row">
-                                    <div class="form-group w3-small">
-                                        <label>Phone Number</label>
-                                        <input type="tel" name="phone" class="phonenumber form-control">
-                                    </div>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-success">Submit</button>
-                                <button class="btn btn-outline-warning">Reset</button>
-                                <br/><br/>
-                            </div>
-                          
-                            </form> 
+
+                          <div class="w3-row w3-white">
+                              <!--<div class="w3-half" style="margin-left: 200px;">-->
+                              <div class="w3-half w3-col s12 m12 l6 offset-lg-3 w3-animate-right">
+                                  <form>
+                                      <div class="input-group w3-padding-top">
+                                          <i class="fa fa-road w3-text-blue w3-left input-group-addon w3-large clear-addon-background"></i>
+                                          <input type='text' name='gradename' id="gradename" class='w3-input' placeholder="Rute Name">
+                                      </div>
+
+                                      <div class="input-group w3-padding-top">
+                                          <i class="fa fa-car w3-text-blue w3-left input-group-addon w3-large clear-addon-background"></i>
+                                          <input type='text' name='vehiclename' id="vechlename" class='w3-input' placeholder="Vehicle Name">
+                                      </div>
+
+                                      <div class="input-group w3-padding-top">
+                                          <i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-large clear-addon-background"></i>
+                                          <input type='text' name='drivarname' id="drivername" class='w3-input' placeholder="Driver Name">
+                                      </div>
+
+                                      <div class="input-group w3-padding-top">
+                                          <i class="fa fa-drivers-license w3-text-blue w3-left input-group-addon w3-large clear-addon-background"></i>
+                                          <input type='text' name='license' id="licenseno" class='w3-input' placeholder="License No">
+                                      </div>
+
+                                      <div class="input-group w3-padding-top w3-margin-bottom">
+                                          <i class="fa fa-phone w3-text-blue w3-left input-group-addon w3-large clear-addon-background"></i>
+                                          <input type='tel' name='phone' id="phone" class='w3-input' placeholder="Phone">
+                                      </div>
+
+                                      <div>
+                                          <button class="btn btn-info w3-blue">Submit</button>
+                                          <br/><br/>
+                                      </div>
+
+                                  </form>
+
+                              </div>
                         </div>
+                    </div>
+                </div>
         <!--All container for displaying all results-->
-                        <div class="w3-container w3-right" style="width: 75%">
+                        <div class="w3-border-top">
                             
                             <form class="w3-border-bottom">
-                                
-                                <div class="w3-container w3-white w3-padding-16"><span class="w3-left w3-bold" style="margin-right:16%">Transport Lists</span>
+                                    <div class="w3-container w3-white w3-padding-16 w3-mobile"><span class="w3-left w3-bold" style="margin-right:16%">Transport Lists</span>
                                     <input style="width: 12%; padding-left:1%" type="text" name="rute" placeholder="Rute" class="w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
                                     <input style="width: 10%; padding-left:1%" type="text" name="carnumber" placeholder="Car Number" class="w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
                                     <input style="width: 15%; padding-left:1%" type="text" name="phone" placeholder="Phone" class="w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
@@ -228,8 +107,37 @@
                                 </div>
                             </form>
                             <!--This container hold the result table-->
-                            <div class="w3-rest w3-white" style="height:428px; padding-left:1%">
-                                <p>All transport lists display here</p>
+                            <div class="w3-rest w3-white w3-responsive w3-mobile table-responsive" style="height:500px; padding-left:1%">
+                                <table style='width:100%; line-height: 200%' class="w3-mobile w3-small">
+                                    <thead>
+                                    <td class="w3-bold">Rute</td>
+                                    <td class="w3-bold">Vehicle No</td>
+                                    <td class="w3-bold">Driver Name</td>
+                                    <td class="w3-bold">Driver License</td>
+                                    <td class="w3-bold">Phone</td>
+                                    <td class="w3-bold">Action</td>
+                                    </thead>
+                                    <tr>
+                                        <td>Bosso</td>
+                                        <td>55434</td>
+                                        <td>Mallam Yusuf</td>
+                                        <td>90DKJS</td>
+                                        <td>98787676577</td>
+                                        <td><i class="fa fa-edit w3-padding-right"></i><i class="fa fa-trash"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Bosso</td>
+                                        <td>55434</td>
+                                        <td>Mallam Yusuf</td>
+                                        <td>90DKJS</td>
+                                        <td>98787676577</td>
+                                        <td><i class="fa fa-edit w3-padding-right"></i><i class="fa fa-trash"></i></td>
+                                    </tr>
+
+
+
+                                </table>
                             </div>
                             
                         </div>
@@ -237,13 +145,15 @@
                 </div>
             </div>
         </div>
+        <script src="js/w3.js"></script>
         <script src="js/w3js.js"></script>
         <script>
+            w3.includeHTML(myCallback);
+            function myCallback() {
+            }
+        </script>
+        <script>
 
-            // Get the Sidebar
-            var mySidebar = document.getElementById("mySidebar");
-
-            // Get the DIV with overlay effect
             var overlayBg = document.getElementById("myOverlay");
 
             // Toggle between showing and hiding the sidebar, and add overlay effect

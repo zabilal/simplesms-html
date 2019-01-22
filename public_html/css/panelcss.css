@@ -9,3 +9,6 @@
 .twitter {
     background: radial-gradient(#51A7E8,#4597D7,#3F91CF, #3B8CC9);
 }
+.leading-and-scalling{font-family: "Futura XBlkCnIt BT"; color:blue}
+
+.fa-trash, .fa-edit{color:blue !important; padding:2px 4px !important}.fa-trash:hover, .fa-edit:hover{color:red !important;}

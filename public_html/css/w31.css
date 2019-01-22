@@ -175,7 +175,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-rest{overflow:hidden}
 .w3-hide{display:none !important}.w3-show-block,.w3-show{display:block !important}.w3-show-inline-block{display:inline-block !important}
 @media (max-width:601px){.w3-modal-content{margin:50px 10px 10px 10px;width:auto !important}}
-@media (max-width:601px){.fam{margin-bottom:4px; width:100% !important} .tabaline{margin-top:200px;}.spacedwon{margin-top: 100px}} /*<!--i used this at exam scheduled page--!>*/
+@media (max-width:601px){.fam{margin-bottom:4px; width:100% !important}.w3-small-screen-spacedown{margin-bottom:8px !important} .tabaline{margin-top:200px;}.spacedwon{margin-top: 100px}} /*<!--i used this at exam scheduled page--!>*/
 
 
 @media (max-width:768px){.w3-modal-content{width:500px}}
@@ -292,8 +292,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-animate-input{-webkit-transition:width 0.4s ease-in-out;transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100% !important}
 .w3-amber,.w3-hover-amber:hover{color:#000 !important;background-color:#ffc107 !important}
 .w3-aqua,.w3-hover-aqua:hover{color:#000 !important;background-color:#00ffff !important}
-.w3-zak{color:#FFF; background: #042954 !important}
-.w3-zakcontent{color: #fff; background: #051F3E !important}
+.w3-zak{color:#fff;background-color:#603cba !important}.w3-zak:hover{border-bottom: 1px solid white !important;}
+.w3-zakcontent{color: black; background: #FFFFFF !important}
 .w3-blue,.w3-hover-blue:hover{color:#fff !important;background-color:#2196F3 !important}
 .w3-light-blue,.w3-hover-light-blue:hover{color:#000 !important;background-color:#87CEEB !important}
 .w3-brown,.w3-hover-brown:hover{color:#fff !important;background-color:#795548 !important}
@@ -347,3 +347,4 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-text-light-grey,.w3-hover-text-light-grey:hover{color:#f1f1f1 !important}
 .w3-text-dark-grey,.w3-hover-text-dark-grey:hover{color:#3a3a3a !important}
 .w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-text-shadow{text-shadow:1px 1px 0 #444}.w3-text-shadow-white{text-shadow:1px 1px 0 #ddd}
+.w3-metro-dark-purple{color:#fff;background-color:#603cba !important;}

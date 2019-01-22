@@ -25,141 +25,15 @@
         </div>
 
         <!-- Sidebar/menu -->
-       <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
-            <div class="w3-container w3-row">
-                <div class="w3-col s4">
-                    <img src="images/avatar2.png" class="w3-circle" style="width:46px" alt="student">
-                </div>
-                <span class="w3-left w3-margin-bottom"><span>Richi<br /><span>Student</span></span></span>
-            </div>
-            
-            <!--dashboard-->
-        <div class="w3-bar-block" id="accordion">
-                <div class="w3-accordion">
-                    <button onclick="myFunction('dashboard')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-dashboard"></span>  Dashboard</button>                     
-                    <div id="dashboard" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="index.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Admin</a>
-                        <a href="studentrecord.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Student</a>
-                        <a href="parent2.html"  target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
-                    </div>
-                </div> 
-
-                <div class="w3-accordion">
-                    <button onclick="myFunction('students')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-users"></span> Students</button>
-                    <div id="students" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allstudents.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Students</a>
-                        <a href="studentdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Student Details</a>
-                        <a href="studentAdmitForm.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>
-                        <a href="studentpromotion.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Students Promotion</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('teachers')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-md"></span> Teachers</button>
-                    <div id="teachers" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allteachers.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Teachers</a>
-                        <a href="teacherdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Teacher Details</a>
-                        <a href="addnewteacher.html" class="w3-button w3-left-align"><span>&#9758; </span>Add Teachers</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('parents')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-plus "></span> Parents</button>
-                    <div id="parents" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allparents.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Parent</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('library')" class="w3-btn-block w3-left-align w3-zak"> <span class="fa fa-book"></span> Library</button>
-                    <div id="library" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allbooks.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Books</a>
-                        <a href="addnewbook.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Book</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('demo1')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-calculator"></span> Class</button>
-                    <div id="demo1" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allclasses.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Classes</a>
-                        <a href="addnewclass.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Class</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('subject')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-columns"></span> Subject</button>
-                    <div id="subject" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="creatnewsubject.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Create New Subject</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('classrountine')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-joomla"></span> Class Routine</button>
-                    <div id="classrountine" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="classroutine.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Class Routine</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('attendance')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-server"></span> Attendance</button>
-                    <div id="attendance" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="attendance.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Attendance</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-graduation-cap"></span> Exam</button>
-                    <div id="exam" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="examschedule.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Exam Schedule</a>
-                        <a href="addnewgrade.html" class="w3-button w3-left-align"><span>&#9758; </span>Exam Grade</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('transport')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-automobile"></span> Transport</button>
-                    <div id="transport" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="addnewtransport.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Transport</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('hostel')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-building"></span> Hostel</button>
-                    <div id="hostel" class="w3-accordion-content w3-bar-block">
-                        <a href="addnewroom.html" class="w3-button w3-left-align w3-bar-block w3-left-align "><span class="w3-left-align">&#9758; </span>Hostel</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('notice')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-pencil-square-o"></span> Notice</button>
-                    <div id="notice" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="noticeboard.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Notice</a>
-                     
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('message')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-envelope-o"></span> Message</button>
-                    <div id="message" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="message.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Message</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-cog"></span> Account</button>
-                    <div id="account" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Account</a>
-                    </div>
-                </div>
-            </div>
-            <br/><br/>
-            
-        </nav>
+        <div>
+            <div  w3-include-html="navbar.html"></div>
+        </div>
 
         <!-- Overlay effect when opening sidebar on small screens -->
         <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
         <!-- !PAGE CONTENT! -->
-           <div class="w3-main" style="margin-left:200px; margin-top:44px">
+           <div class="w3-main" style="margin-left:250px; margin-top:44px">
              
             <form class="w3-mobile">
                 <div class="w3-container w3-rest w3-white w3-padding-16 w3-center w3-mobile">School Management System
@@ -169,8 +43,8 @@
             <!-- Header -->
             <header class=" w3-white w3-margin-top">
                 <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="w3-button w3-round">Home</a></li>
-                    <li class="w3-bar-item"><a href="#" class="w3-button w3-round">Fees Collection</a></li>
+                    <li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>
+                    <li class="w3-bar-item"><a href="#" class="btn w3-blue">Fees Collection</a></li>
                 </ul>
             </header>
 
@@ -180,10 +54,7 @@
 
                     <!--container to create a new subject-->
                     <div class='w3-row w3-light-gray'>
-                        <div class='w3-white w3-left w3-mobile' style="height:px; width: 25%">
-                            
-                                                            
-                            </div>
+
                         </div>
                         <!--All container for displaying all results-->
                         <div class="w3-left w3-mobile" style="width:100%">
@@ -191,26 +62,84 @@
                             <form class="w3-border-bottom">
 
                                 <div class="w3-container w3-white w3-padding-16"><span class="w3-left w3-bold" style="margin-right:16%">Student Collection Fees Table</span>
-                                    <input style="width: 12%; padding-left:1%" type="text" name="hostelname" placeholder="Hostel Name" class=" fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
-                                    <input style="width: 10%; padding-left:1%" type="text" name="room" placeholder="Room" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
-                                    <input style="width: 15%; padding-left:1%" type="text" name="bed" placeholder="Bed" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
+                                    <input style="width: 12%; padding-left:1%" type="text" name="ID" placeholder="ID" class=" fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
+                                    <input style="width: 10%; padding-left:1%" type="text" name="phone" placeholder="Phone" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
                                     <span style="width: 15%" class="w3-round-large w3-blue w3-padding-4 btn btn-primary w3-small w3-mobile">Search</span>
                                 </div>
                             </form>
                             <!--This container hold the result table-->
-                            <div class="w3-rest w3-white w3-container" style="height:428px; padding-left:1%">
-                                <p>Fees collection list display here</p>
+                            <div class="w3-rest w3-white w3-container w3-responsive" style="height:428px; padding-left:1%">
+                                <div class="w3-responsive">
+
+                                    <table style='width:100%; line-height: 200%' class="w3-mobile w3-small">
+                                        <thead>
+                                        <td class="w3-bold">ID</td>
+                                        <td class="w3-bold">Name</td>
+                                        <td class="w3-bold">Gender</td>
+                                        <td class="w3-bold">Parent Name</td>
+                                        <td class="w3-bold">Class</td>
+                                        <td class="w3-bold">Section</td>
+                                        <td class="w3-bold">Fees</td>
+                                        <td class="w3-bold">Status</td>
+                                        <td class="w3-bold">Phone</td>
+                                        <td class="w3-bold">E-mail</td>
+                                        <td class="w3-bold">Date</td>
+                                        <td class="w3-bold">Action</td>
+                                        </thead>
+                                        <tr>
+                                            <td>1111</td>
+                                            <td>Muhammed Garba</td>
+                                            <td>Male</td>
+                                            <td>Rahmat Garba</td>
+                                            <td>2</td>
+                                            <td>A</td>
+                                            <td><span class="fa fa-dollar"></span> 200,00</td>
+                                            <td id="status"> Paid</td>
+                                            <td>878765656</td>
+                                            <td>Emperor.cruzy@gmail.com</td>
+                                            <td>10/102919</td>
+                                            <td>
+                                                <i class="fa fa-edit w3-padding-right  "></i>
+                                                <i class="fa fa-trash  "></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1111</td>
+                                            <td>Muhammed Garba</td>
+                                            <td>Male</td>
+                                            <td>Rahmat Garba</td>
+                                            <td>2</td>
+                                            <td>A</td>
+                                            <td><span class="fa fa-dollar"></span> 200,00</td>
+                                            <td id="status"> Paid</td>
+                                            <td>878765656</td>
+                                            <td>Emperor.cruzy@gmail.com</td>
+                                            <td>20/10/2010</td>
+                                            <td>
+                                                <i class="fa fa-edit w3-padding-right  "></i>
+                                                <i class="fa fa-trash  "></i>
+                                            </td>
+                                        </tr>
+
+
+                                    </table>
+                                </div>
                             </div>
+
 
                         </div>
                     </div>
                 </div>
             </div>
         <script src="js/w3js.js"></script>
+        <script src="js/w3.js"></script>
+        <script>
+            w3.includeHTML(myCallback);
+            function myCallback() {
+            }
+        </script>
         <script>
 
-            // Get the Sidebar
-            var mySidebar = document.getElementById("mySidebar");
 
             // Get the DIV with overlay effect
             var overlayBg = document.getElementById("myOverlay");

@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/w31.css">
 <link rel="stylesheet" href="css/panelcss.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font/css/font-awesome.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css"> 
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
@@ -19,194 +20,68 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
 
     <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
-            <div class="w3-container w3-row">
-                <div class="w3-col s4">
-                    <img src="images/avatar2.png" class="w3-circle" style="width:46px" alt="student">
-                </div>
-                <span class="w3-left w3-margin-bottom"><span>Richi<br /><span>Student</span></span></span>
-            </div>
-            
-            <!--dashboard-->
-        <div class="w3-bar-block" id="accordion">
-                <div class="w3-accordion">
-                    <button onclick="myFunction('dashboard')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-dashboard"></span>  Dashboard</button>                     
-                    <div id="dashboard" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="index.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Admin</a>
-                        <a href="studentrecord.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Student</a>
-                        <a href="parent2.html"  target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
-                    </div>
-                </div> 
-
-                <div class="w3-accordion">
-                    <button onclick="myFunction('students')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-users"></span> Students</button>
-                    <div id="students" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allstudents.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Students</a>
-                        <a href="studentdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Student Details</a>
-                        <a href="studentAdmitForm.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>
-                        <a href="studentpromotion.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Students Promotion</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('teachers')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-md"></span> Teachers</button>
-                    <div id="teachers" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allteachers.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Teachers</a>
-                        <a href="teacherdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Teacher Details</a>
-                        <a href="addnewteacher.html" class="w3-button w3-left-align"><span>&#9758; </span>Add Teachers</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('parents')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-user-plus "></span> Parents</button>
-                    <div id="parents" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allparents.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Parent</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('library')" class="w3-btn-block w3-left-align w3-zak"> <span class="fa fa-book"></span> Library</button>
-                    <div id="library" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allbooks.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Books</a>
-                        <a href="addnewbook.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Book</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('demo1')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-calculator"></span> Class</button>
-                    <div id="demo1" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="allclasses.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Classes</a>
-                        <a href="addnewclass.html" class="w3-button w3-left-align"><span>&#9758; </span>Add New Class</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('subject')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-columns"></span> Subject</button>
-                    <div id="subject" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="creatnewsubject.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Create New Subject</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('classrountine')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-joomla"></span> Class Routine</button>
-                    <div id="classrountine" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="classroutine.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Class Routine</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('attendance')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-server"></span> Attendance</button>
-                    <div id="attendance" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="attendance.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Attendance</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-graduation-cap"></span> Exam</button>
-                    <div id="exam" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="examschedule.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Exam Schedule</a>
-                        <a href="addnewgrade.html" class="w3-button w3-left-align"><span>&#9758; </span>Exam Grade</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('transport')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-automobile"></span> Transport</button>
-                    <div id="transport" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="addnewtransport.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Transport</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('hostel')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-building"></span> Hostel</button>
-                    <div id="hostel" class="w3-accordion-content w3-bar-block">
-                        <a href="addnewroom.html" class="w3-button w3-left-align w3-bar-block w3-left-align "><span class="w3-left-align">&#9758; </span>Hostel</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('notice')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-pencil-square-o"></span> Notice</button>
-                    <div id="notice" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="noticeboard.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Notice</a>
-                     
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('message')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-envelope-o"></span> Message</button>
-                    <div id="message" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="message.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Message</a>
-                    </div>
-                </div>
-
-                <div class="w3-accordion w3-green">
-                    <button onclick="myFunction('account')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-cog"></span> Account</button>
-                    <div id="account" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                        <a href="#" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Account</a>
-                    </div>
-                </div>
-            </div>
-            <br/><br/>
-            
-        </nav>
+<div>
+    <div  w3-include-html="navbar.html"></div>
+</div>
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
     <!-- !PAGE CONTENT! -->
 
     <!--Search bar--> 
-    <div class="w3-main" style="margin-left:200px;margin-top:44px;">
-            <form>
+    <div class="w3-main" style="margin-left:250px;margin-top:44px;">
+        <form class="w3-margin-bottom">
                 <div class="w3-container w3-rest w3-white w3-padding-16 w3-center">Welcome to BCN School Management System
-                <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+                <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-mobile w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
             </form>
 
       <!-- Header -->
       <header class=" w3-white">
           <ul class="w3-bar w3-left-align" style="padding-left:0">
-              <li class="w3-bar-item "><a href="#" class="w3-button w3-round">Home</a></li>
-              <li class="w3-bar-item"><a href="#" class="w3-button w3-round">Student</a></li>
+              <li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>
+              <li class="w3-bar-item"><a href="#" class="btn w3-blue">Student</a></li>
             </ul>
       </header>
 
       <div class="w3-row-padding w3-margin-bottom">
-        <div class="w3-quarter w3-white">
+        <div class="w3-quarter w3-white ">
           <div class="w3-container  w3-padding-16">
-            <div class="w3-left"><i class="fa fa-bitcoin w3-xxxlarge"></i></div>
+              <span class="fa fa-graduation-cap w3-left w3-xlarge"></span>
             <div class="w3-right">
               <h3>05</h3>
             </div>
             <div class="w3-clear"></div>
-            <h4>Upcoming Exam</h4>
+            <h5>Upcoming Exam</h5>
           </div>
         </div>
-        <div class="w3-quarter">
+        <div class="w3-quarter fam">
           <div class="w3-container w3-white  w3-padding-16">
-            <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+            <div class="w3-left"><i class="fa fa-money w3-xlarge"></i></div>
             <div class="w3-right">
                 <h3><span>&#8358;</span>1,500</h3>
             </div> 
             <div class="w3-clear"></div>
-            <h4>Due Fees</h4>
+            <h5>Due Fees</h5>
           </div>
         </div>
-        <div class="w3-quarter">
+        <div class="w3-quarter fam">
           <div class="w3-container w3-white    w3-padding-16">
-            <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+            <div class="w3-left"><i class="fa fa-flag w3-xlarge"></i></div>
             <div class="w3-right">
               <h3>10</h3>
             </div>
             <div class="w3-clear"></div>
-            <h4>Events</h4>
+            <h5>Events</h5>
           </div>
         </div>
-        <div class="w3-quarter">
+        <div class="w3-quarter fam">
           <div class="w3-container w3-white   w3-padding-16">
-            <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+            <div class="w3-left"><i class="fa fa-folder-open w3-xlarge"></i></div>
             <div class="w3-right">
               <h3>02</h3>
             </div>
             <div class="w3-clear"></div>
-            <h4>Documents</h4>
+            <h5>Documents</h5>
           </div>
         </div>
       </div>
@@ -214,32 +89,78 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <!--Student Record container-->
         <div class="w3-row-padding" style="margin:0 -16px">
            <div class="w3-half w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
-               <div class="w3-border-bottom w3-margin-bottom"><h5>My information</h5></div>
+               <div class="w3-border-bottom w3-margin-bottom w3-padding-16 w3-padding-left w3-blue"><h5>My information</h5></div>
                <div class="w3-quarter w3-container w3-clear">
                    <img src="images/avatar3.png" alt="student" style="width:100%; margin-bottom: 8px;">
-                   <div class="w3-rest w3-small">
-                       <span class='w3-margin-right w3-gray'>&#xf1f2;</span>
-                       <span class='w3-margin-right w3-gray'></span>
-                       <span class='w3-margin-right w3-gray'>d</span>
-                       <span class='w3-margin-4 w3-gray'>g</span>
-                   </div>
                </div>
                
-               <div class="w3-rest w3-container">
-                   <ul style='list-style: none' class="w3-border-bottom">
-                       <li><p>Name: <span class="w3-right">Muhammed Garba</span></p></li>
-                       <li><p>Gender: <span class="w3-right">Male</span></p></li>
-                       <li><p>Father Names: <span class="w3-right">Dada Paiko</span></p></li>
-                       <li><p>Mother Names <span class="w3-right">Mama Paiko</span></p></li>
-                       <li><p>Date of Birth: <span class="w3-right">20 Nov, 2018</span></p></li>
-                       <li><p>Religion: <span class="w3-right">Islam</span></p></li>
-                       <li><p>Father Occupation: <span class="w3-right">Software Eng.</span></p></li>
-                       <li><p>Email: <span class="w3-right">Emperor.cruzy@gmail.com</span></p></li>
-                       <li><p>Admission Date <span class="w3-right">20 April, 2012</span></p></li>
-                       <li><p>Class: <span class="w3-right">2</span></p></li>
-                       <li><p>Section: <span class="w3-right">A</span></p></li>
-                       <li><p>Roll: <span class="w3-right">9887</span></p></li>
-                   </ul>
+               <div class="w3-rest w3-container fam">
+                  <table style='width:100%; line-height: 2rem' class="w3-mobile w3-responsive w3-small">
+                       <thead>
+                           <td class="w3-bold">About Me</td>
+                           <td></td>
+                           </thead>
+                           <tr>
+                               <td><span>Name:</span></td>
+                               <td><span>Muhammed Garba</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Gender:</span></td>
+                               <td><span>Female</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Father Name:</span></td>
+                               <td><span>Muhammed Garba</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Mother Name:</span></td>
+                               <td><span>Muhammed Aisha</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Date of Birth:</span></td>
+                               <td><span>09/09/1992</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Religion:</span></td>
+                               <td><span>Islam</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Father Occupation:</span></td>
+                               <td><span>Businessman</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Section:</span></td>
+                               <td><span>A</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Email:</span></td>
+                               <td><span>Emperor.cruzy@gmail.com</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Admission Date:</span></td>
+                               <td><span>04/04/2014</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Class:</span></td>
+                               <td><span>5</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Section:</span></td>
+                               <td><span>A</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Roll:</span></td>
+                               <td><span>2981</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Address:</span></td>
+                               <td><span>Ta-107 Sydenye Autrialia</span></td>
+                           </tr>
+                           <tr>
+                               <td><span>Phone:</span></td>
+                               <td><span>09098765654</span></td>
+                           </tr>
+                   </table>
                </div>
                
           </div>
@@ -247,24 +168,34 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
             <!--the down box starts here-->
        <div class="w3-container w3-half">    
         <div class="w3-row w3-margin-bottom">
-        <div class="bottom-margin1 ritpadding">
-              <div class="w3-container w3-white w3-text-white w3-padding-16">
-                  <div class="w3-border-bottom w3-padding-bottom">
+        <div class="bottom-margin1 ritpadding" >
+              <div class="w3-container card w3-padding-16 w3-responsive" style="max-height: 300px; height: 270px">
+                  <div class="w3-border-bottom w3-padding-bottom ">
                       <span class='w3-text-black w3-bold'>Notice Board</span>
-                      <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span></div>
-                  <div style='overflow: auto;'>
-                    <h3 class='w3-text-black'>50,000</h3>
-                    <p class='w3-text-black'>Welcome</p>
-                    <p class='w3-text-black'>Welcome</p>
-                    <p class='w3-text-black'>Welcome</p>
-                    
+                      <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>-->
                   </div>
+                  <div class="w3-responsive w3-small w3-margin-bottom">
+                      <ul class="w3-ul">
+                          <li>
+                              <span class='w3-small w3-text-blue w3-bold'>16 May, 2091</span><br/>
+                              <span class='w3-text-black w3-bold'>Jenifar Lopez</span><br/>
+                              <span class='w3-text-black'>I really like the productivity of this app</span>
+                          </li>
+                          <li>
+                              <span class='w3-small w3-text-blue w3-bold'>16 May, 2091</span><br/>
+                              <span class='w3-text-black w3-bold'>Jenifar Lopez</span><br/>
+                              <span class='w3-text-black'>I really like the productivity of this app</span>
+                          </li>
+                      </ul>
+
+                  </div>
+
               </div>
         </div>
             
         <div class="bottom-margin1 ritpadding">
-              <div class="w3-container w3-white w3-text-white w3-padding-16">
-                  <div class="w3-border-bottom w3-padding-bottom">
+              <div class="w3-container w3-white w3-text-white w3-padding-16 w3-responsive card"  style="max-height: 300px; height: 270px">
+                  <div class="w3-padding-bottom">
                       <span class='w3-text-black w3-bold'>All Exam Result</span>
 <!--                      <div class="w3-btn-group">
                         <select class='w3-text-black'>
@@ -274,13 +205,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
                         </select>
                           <span class='w3-text-black w3-button w3-round-xxlarge'>Search</span>
                        </div> -->
-                      <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span></div>
-                  <div style='overflow: auto;'>
+                      <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span></div>-->
+                  <div class="w3-responsive w3-border-top w3-padding-top">
                     <h3 class='w3-text-black'>50,000</h3>
                     <p class='w3-text-black'>Welcome</p>
                     <p class='w3-text-black'>Welcome</p>
                     <p class='w3-text-black'>Welcome</p>
-                    
+
                   </div>
               </div>
         </div>
@@ -291,11 +222,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <!-- End page content -->
     </div>
 
+    <script src="js/w3.js"></script>
     <script src="js/w3js.js"></script>
-    <script>
 
-    // Get the Sidebar
-    var mySidebar = document.getElementById("mySidebar");
+            <script>
+                w3.includeHTML(myCallback);
+                function myCallback() {
+                }
+            </script>
+    <script>
 
     // Get the DIV with overlay effect
     var overlayBg = document.getElementById("myOverlay");

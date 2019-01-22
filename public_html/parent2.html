@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/w31.css">
 <link rel="stylesheet" href="css/panelcss.css">
 <link rel="stylesheet" href="css/font/css/font-awesome.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css"> 
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
@@ -154,32 +155,32 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <!-- !PAGE CONTENT! -->
 
     <!--Search bar--> 
-    <div class="w3-main" style="margin-left:250px;margin-top:44px;">
-            <form>
-                <div class="w3-container w3-rest w3-white w3-padding-16 w3-center">Welcome to BCN School Management System
+    <div class="w3-main w3-container" style="margin-left:250px;margin-top:44px;">
+        <form class="w3-margin-bottom">
+            <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3>
                 <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
             </form>
 
       <!-- Header -->
-      <header class=" w3-white">
+      <header class="w3-white">
           <ul class="w3-bar w3-left-align" style="padding-left:0">
-              <li class="w3-bar-item "><a href="#" class="w3-button w3-round">Home</a></li>
-              <li class="w3-bar-item"><a href="#" class="w3-button w3-round">Student</a></li>
+              <li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>
+              <li class="w3-bar-item"><a href="#" class="btn w3-blue">Student</a></li>
         </ul>
       </header>
 
         <!--Student Record container-->
-        <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-row-padding" style="margin:0 -10px">
            <div class="w3-half w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
-             <div class="w3-border-bottom w3-margin-bottom"><h5>My Child 1</h5></div>
+             <div class="w3-border-bottom w3-margin-bottom w3-blue w3-padding w3-padding-left"><h5>My Child 1</h5></div>
                <div class="w3-quarter w3-container w3-clear">
                    <img src="images/avatar3.png" alt="student" style="width:100%; margin-bottom: 8px;">
-                   <div class="w3-rest w3-small">
+<!--                   <div class="w3-rest w3-small">
                        <span class='w3-margin-right w3-gray'>&#xf1f2;</span>
                        <span class='w3-margin-right w3-gray'></span>
                        <span class='w3-margin-right w3-gray'>d</span>
                        <span class='w3-margin-4 w3-gray'>g</span>
-                   </div>
+                   </div>-->
                </div>
                
              <div class="w3-rest w3-container w3-small" style='margin-bottom: 10%'>
@@ -196,15 +197,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
             </div>
 
                <!--the second box starts here-->
-               <div class="w3-border-bottom w3-margin-bottom"><h5>My Child 2</h5></div>
+               <div class="w3-border-bottom w3-margin-bottom w3-blue w3-padding w3-padding-left"><h5>My Child 2</h5></div>
                <div class="w3-quarter w3-container w3-clear">
                    <img src="images/avatar3.png" alt="student" style="width:100%; margin-bottom: 8px;">
-                   <div class="w3-rest w3-small">
+<!--                   <div class="w3-rest w3-small">
                        <span class='w3-margin-right w3-gray'>&#xf1f2;</span>
                        <span class='w3-margin-right w3-gray'></span>
                        <span class='w3-margin-right w3-gray'>d</span>
                        <span class='w3-margin-4 w3-gray'>g</span>
-                   </div>
+                   </div>-->
                </div>
                
                <div class="w3-rest w3-container w3-small">
@@ -228,25 +229,25 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <div class="w3-row w3-margin-bottom"> 
       <div class="w3-row w3-margin-bottom">
         <div class="w3-half w3-white w3-group" style="width:48%; margin-right: 2%">
-            <div class='w3-quarter w3-left'><img src="images/red.jpg" alt='red' style='width:140%; height: 90px'></div>
+            <!--<div class='w3-quarter w3-left'><img src="images/red.jpg" alt='red' style='width:140%; height: 90px'></div>-->
             <span class="w3-rest w3-left w3-padding-top" style='margin-left:20%'><span class='w3-bold'>1,500</span><br />Due Fees</span>
             <br/><br /><br/><br />
         </div>
        
         <div class="w3-half w3-white w3-group" style="width:48%; margin-right: 2%; height: 50%">
-            <div class='w3-quarter w3-left'><img src="images/green.png" alt='red' style='width:140%; height: 90px'></div>
+            <!--<div class='w3-quarter w3-left'><img src="images/green.png" alt='red' style='width:140px; height: 90px'></div>-->
             <span class="w3-rest w3-left w3-padding-top" style='margin-left:20%'><span class='w3-bold'>10</span><br />Upcoming Exam</span>
              <br/><br /><br/><br />
         </div>
         
         <div class="w3-half w3-white w3-group" style="width:48%; margin-right: 2%; height: 50%; margin-top: -2%">
-            <div class='w3-quarter w3-left'><img src="images/cap2.png" alt='red' style='width:140%; height: 90px'></div>
+            <!--<div class='w3-quarter w3-left'><img src="images/cap2.png" alt='red' style='width:140%; height: 90px'></div>-->
             <span class="w3-rest w3-left w3-padding-top" style='margin-left:20%'><span class='w3-bold'>06</span><br />Result Published</span>
              <br/><br /><br/><br />
         </div>
             
         <div class="w3-half w3-white w3-group" style="width:48%; margin-right: 2%; height: 50%; margin-top: -2%">
-            <div class='w3-quarter w3-red w3-left'><img src="images/cam2.png" alt='red' style='width:140%; height: 90px'></div>
+            <!--<div class='w3-quarter w3-red w3-left'><img src="images/cam2.png" alt='red' style='width:140%; height: 90px'></div>-->
             <span class="w3-rest w3-left w3-padding-top" style='margin-left:20%'><span class='w3-bold'>1,0000</span><br />Total Expenses</span>
              <br/><br /><br/><br />
         </div>
@@ -256,7 +257,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
            <!--notice board start here--> 
         <div class="w3-row w3-margin-bottom" style='margin-top:-8%;'>
         <div class="bottom-margin1 ritpadding">
-              <div class="w3-container w3-white w3-text-white w3-padding-16">
+              <div class="w3-container w3-white w3-padding-16">
                   <div class="w3-border-bottom w3-padding-bottom">
                       <span class='w3-text-black w3-bold'>Notice Board</span>
                       <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>
@@ -276,16 +277,31 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         </div>
             
         <div class="bottom-margin1 ritpadding">
-              <div class="w3-container w3-white w3-text-white w3-padding-16">
+              <div class="w3-container w3-white  w3-padding-16">
                   <div class="w3-border-bottom w3-padding-bottom">
-                      <span class='w3-text-black w3-bold'>All Exam Result</span>
+                      <span class='w3-text-black w3-bold'>All Expenses</span>
                       <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span></div>
-                  <div style='overflow: auto; height: 200px'>
-                    <h3 class='w3-text-black'>50,000</h3>
-                    <p class='w3-text-black'>Welcome</p>
-                    <p class='w3-text-black'>Welcome</p>
-                    <p class='w3-text-black'>Welcome</p>
-                    
+              <div class="w3-responsive" style='height: 200px'>
+
+                      <table style='width:100%;' class="w3-mobile w3-small">
+                          <thead>
+                          <td >ID No</td>
+                          <td>Espenses Type</td>
+                          <td>Amount</td>
+                          <td>Status</td>
+                          <td>Date</td>
+                          <td class="w3-bold">Action</td>
+                          </thead>
+                          <tr>
+                              <td>1111</td>
+                              <td>Salary</td>
+                              <td><i class="fa fa-dollar"></i> 10,000</td>
+                              <td><i class="badge badge-info"></i>Due</td>
+                              <td>09/12/2010O</td>
+                              <td><i class="fa fa-edit w3-padding-right"></i><i class="fa fa-trash"></i></td>
+                          </tr>
+
+                      </table>
                   </div>
               </div>
         </div>

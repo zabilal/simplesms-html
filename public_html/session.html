@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>Session</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w31.css">
+<link rel="stylesheet" href="css/panelcss.css">
+<link rel="stylesheet" href="css/font/css/font-awesome.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+    html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
+    .w3-row .w3-half .input-group{margin-top: 1rem}
+    .clear-addon-background{background: none!important; border: none!important;}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+    <span class="w3-bar-item w3-right">Logo</span>
+</div>
+
+<!-- Sidebar/menu -->
+<div>
+    <div  w3-include-html="navbar.html"></div>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+
+<!--Search bar-->
+<div class="w3-main w3-container" style="margin-left:250px;margin-top:44px;">
+    <form>
+        <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3>
+            <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-mobile w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+    </form>
+
+    <!-- Header -->
+    <header class=" w3-white w3-margin-top">
+        <ul class="w3-bar w3-left-align" style="padding-left:0">
+            <li class="w3-bar-item "><a href="#" class="btn btn-info w3-blue">Home</a></li>
+            <!--<li class="w3-bar-item"><a href="#" class="btn btn-info w3-blue">Add New</a></li>-->
+        </ul>
+    </header>
+
+    <div class="w3-row-padding w3-container" style="margin:0 -16px;">
+        <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
+
+            <!--container to create a new subject-->
+            <div class='w3-row w3-white'>
+                <div class='w3-white w3-left w3-mobile' style="height:400px; width: 25%">
+
+                    <div class="w3-border-bottom w3-margin-bottom w3-padding-bottom w3-bold w3-padding-16 w3-padding-left  ">
+                        Add New Session
+                        <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>-->
+                    </div>
+                    <div class="w3-col s12 l12">
+
+                        <form style="width: 98%" >
+
+                            <div class="input-group w3-padding-top">
+                                <input type='text' name='session' id="session" class='w3-input' placeholder="Session">
+                            </div>
+
+
+                            <div class="w3-padding-top">
+
+                                <label for="sessionbegin">Session Begin</label>
+                                <input type='date' name='sessionbegin' id="sessionbegin" class='w3-input'>
+                            </div>
+
+                            <div class="w3-padding-top">
+                                <label for="sessionend">Session End</label>
+                                <input type='date' name='sessionbegin' id="sessionend" class='w3-input'>
+                            </div>
+
+
+                            <div class="input-group w3-padding-top">
+                                <input type='text' name='status' id="status" class='w3-input' placeholder="Status">
+                            </div>
+
+                            <br/><br/>
+                            <div>
+                                <button class="btn btn-info w3-blue mx-auto w3-mobile">Add Session</button>
+                                <br/>
+                            </div>
+                            <!--ARROW BARS FOR NAVIGATING THE TABLE-->
+
+                            <!--<div class="w3-navbar w3-rest">-->
+                                <!--<i class="fa fa-angle-left w3-text-blue w3-padding-right w3-xlarge w3-button"></i>-->
+                                <!--<i class="fa fa-angle-right w3-text-blue w3-padding-left w3-xlarge w3-button w3-right"></i>-->
+                                <!--<br/><br/>-->
+                            <!--</div>-->
+                        </form>
+                    </div>
+                </div>
+
+                <!--All container for displaying all results-->
+
+                <div class="w3-right w3-mobile" style="width: 75%">
+
+                    <form class="w3-border-bottom">
+
+                        <div class="w3-container w3-white w3-padding-16"><span class="w3-left w3-bold" style="margin-right:16%">Class Lists</span>
+                            <input style="width: 10%; padding-left:1%" type="text" name="session" placeholder="Session" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
+                            <input style="width: 10%; padding-left:1%" type="text" name="search" placeholder="Status" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">
+                            <span style="width: 15%" class="w3-round-large btn btn-info w3-blue w3-padding-4 w3-small w3-mobile">Search</span>
+                        </div>
+                    </form>
+                    <!--This container hold the result table-->
+                    <div class="w3-rest w3-white w3-responsive w3-padding-left" style="height:500px; padding-left:1%">
+                        <table style='width:100%; line-height: 200%' class="w3-mobile w3-small">
+                            <thead>
+                            <td class="w3-bold">Session</td>
+                            <td class="w3-bold">Session Begin</td>
+                            <td class="w3-bold">Session End</td>
+                            <td class="w3-bold">Status</td>
+                            <td class="w3-bold">Action</td>
+                            </thead>
+                            <tr>
+                                <td>2017 - 2018</td>
+                                <td> 1 Jan 2018</td>
+                                <td> 8 Oct 2018</td>
+                                <td> On Session</td>
+                                <td><i class="fa fa-edit w3-padding-right"></i><i class="fa fa-trash"></i></td>
+                            </tr>
+
+                            <tr>
+                                <td>2017 - 2018</td>
+                                <td> 1 Jan 2018</td>
+                                <td> 8 Oct 2018</td>
+                                <td> On Session</td>
+                                <td><i class="fa fa-edit w3-padding-right"></i><i class="fa fa-trash"></i></td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/w3.js"></script>
+<script src="js/w3js.js"></script>
+<script>
+    w3.includeHTML(myCallback);
+    function myCallback() {
+    }
+</script>
+<script>
+
+
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_analytics&stacked=h by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Jan 2018 03:48:59 GMT -->
+</html>
+
