@@ -10,9 +10,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
     html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-    .clear-addon-background{background: none !important; border: none !important;}
-    .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
-    .w3-row .w3-half .input-group{margin-top: 1rem}
+    .input-group{margin-top: 10px}
 </style>
 <body class="w3-white">
 
@@ -47,31 +45,33 @@
             </div>
             <!--student forms begins here-->
 
-            <div class="w3-row">
+            <div class="w3-row card">
                 <!--<div class="w3-half" style="margin-left: 200px;">-->
                 <div class="w3-half w3-col s12 m12 l6 offset-lg-3" style="margin-top: 5rem;">
                     <form>
 
                         <div class="input-group">
-                            <i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                            <input type='text' name='documentname' id="documentname" class='w3-input' placeholder="Document Name" required="required">
+                            <!--<i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                            <input type='text' name='documentname' id="documentname" class='form-control' placeholder="Document Name" required="required">
                         </div>
 
                         <div class="input-group">
-                            <i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                            <input type='text' name='description' id="description" class='w3-input' placeholder="Document Description" required="required">
+                            <!--<i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                            <input type='text' name='description' id="description" class='form-control' placeholder="Document Description" required="required">
                         </div>
 
                         <div class="input-group">
-                            <i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                            <input type='text' name='cabinet' id="cabinet" class='w3-input' placeholder="Document Cabinet" required="required">
+                            <!--<i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                            <input type='text' name='cabinet' id="cabinet" class='form-control' placeholder="Document Cabinet" required="required">
                         </div>
 
                         <br/>
                         <br/>
-                        <br/>
+
                         <button class="btn w3-blue w3-col s12 m3 l3">Add Document</button>
-
+                        <br/>
+                        <br/> <br/>
+                        <br/>
                     </form>
                 </div>
             </div>

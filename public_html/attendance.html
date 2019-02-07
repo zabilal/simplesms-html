@@ -10,11 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
-        .w3-row .w3-half .input-group{margin-top: 1rem}
-        .clear-addon-background{background: none!important; border: none!important;}
     </style>
-    <body class="w3-light-grey">
+    <body class="w3-white">
 
         <!-- Top container -->
         <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
@@ -35,7 +32,8 @@
         <div class="w3-main w3-container" style="margin-left:250px;margin-top:44px;">
             <form>
                 <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3>
-                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+                    <!--<input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>-->
+                </div>
             </form>
 
             <!-- Header -->
@@ -45,34 +43,34 @@
 
             <!--Student Record container-->
             <div class="w3-row-padding w3-container" style="margin:0 -16px">
-                <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
-                    <div class="w3-border-bottom w3-margin-bottom w3-padding float-lg-right w3-mobile"><span class="w3-bold">Check Teacher Attendance</span>
-                        <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>-->
-                        <form >
-                            <div class="w3-container w3-white w3-padding-16">
-                                <!--<input style="width: 30%; padding-left:1%" type="text" name="search" placeholder="name" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">-->
-                                <select name="session" class="w3-small-screen-spacedown">
-                                    <option selected="selected" disabled="disabled">Session</option>
-                                    <option>Term</option>
-                                    <option>Class</option>
-                                    <option>Date</option>
-                                    <option>Teacher Name</option>
-                                </select>
-                                <span class="">
-                                  <input style="width: 50%; padding-left:1%" type="text" name="search" class="fam w3-mobile w3-text-black w3-small w3-border" placeholder="Search what">
-                                <i class="fa fa-search w3-hover-text-blue"></i>
-                                </span>
+                <div class="w3-padding-left" style="height: 50%; box-sizing: border-box;">
+                    <!--<div class="w3-border-bottom w3-margin-bottom w3-padding float-lg-right w3-mobile"><span class="w3-bold">Check Teacher Attendance</span>-->
+                        <!--&lt;!&ndash;<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>&ndash;&gt;-->
+                        <!--<form>-->
+                            <!--<div class="w3-container w3-white w3-padding-16">-->
+                                <!--&lt;!&ndash;<input style="width: 30%; padding-left:1%" type="text" name="search" placeholder="name" class="fam w3-mobile w3-border-0 w3-padding-4 w3-text-black w3-round-large w3-light-grey w3-small">&ndash;&gt;-->
+                                <!--<select name="session" class="w3-small-screen-spacedown">-->
+                                    <!--<option selected="selected" disabled="disabled">Session</option>-->
+                                    <!--<option>Term</option>-->
+                                    <!--<option>Class</option>-->
+                                    <!--<option>Date</option>-->
+                                    <!--<option>Teacher Name</option>-->
+                                <!--</select>-->
+                                <!--<span class="">-->
+                                  <!--<input style="width: 50%; padding-left:1%" type="text" name="search" class="fam w3-mobile w3-text-black w3-small w3-border" placeholder="Search what">-->
+                                <!--&lt;!&ndash;<i class="fa fa-search w3-hover-text-blue"></i>&ndash;&gt;-->
+                                <!--</span>-->
 
-                            </div>
-                        </form>
-                    </div>
+                            <!--</div>-->
+                        <!--</form>-->
+                    <!--</div>-->
                    <!--student forms begins here-->
-                <div class="row">
+                <div class="row card">
                     <div class='w3-half w3-col s12 m12 l6 offset-lg-3'>
                         <form>
                             <div class="input-group w3-padding-top">
-                                <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                <select class="w3-input" name="session">
+                                <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                <select class="form-control" name="session">
                                     <option selected="selected" disabled="disabled">Session</option>
                                     <option>2017 - 2018</option>
                                     <option>2017 - 2018</option>
@@ -81,8 +79,8 @@
                             </div>
 
                             <div class="input-group w3-padding-top">
-                                <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                <select class="w3-input" name="term">
+                                <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                <select class="form-control" name="term">
                                     <option selected="selected" disabled="disabled">Term</option>
                                     <option>First</option>
                                     <option>Second</option>
@@ -91,8 +89,8 @@
                             </div>
 
                             <div class="input-group w3-padding-top">
-                                <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                <select class="w3-input">
+                                <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                <select class="form-control">
                                 <option selected="selected" disabled="disabled">Class</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -100,13 +98,13 @@
                             </div>
 
                             <div class="input-group w3-padding-top">
-                                <i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                <input name="date" type="date" placeholder="Date" class="w3-input">
+                                <!--<i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                <input name="date" type="date" placeholder="Date" class="form-control">
                             </div>
 
                             <div class="input-group w3-padding-top">
-                                <i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                <input name="text" type="teacher" placeholder="Teacher" class="w3-input">
+                                <!--<i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                <input name="text" type="teacher" placeholder="Teacher" class="form-control">
                             </div>
                             <br/>
                                <button class='btn w3-round-large w3-blue'>Mark Attendance</button>
@@ -181,23 +179,23 @@
 
                             <div class="input-group">
                                 <i class="fa date w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                <input type="date" class="w3-input">
+                                <input type="date" class="form-control">
                             </div>
 
                             <div class="input-group">
                                 <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                <input type="text" placeholder="Class" class="w3-input">
+                                <input type="text" placeholder="Class" class="form-control">
 
                             </div>
 
                             <div class="input-group">
                                 <i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                <input type='text' name='fname' id="fname" class='w3-input' placeholder="First Name">
+                                <input type='text' name='fname' id="fname" class='form-control' placeholder="First Name">
                             </div>
 
                             <div class="input-group">
                                 <i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                <input type='text' name='lame' id="lname" class='w3-input' placeholder="Last Name">
+                                <input type='text' name='lame' id="lname" class='form-control' placeholder="Last Name">
                             </div>
 
                             <div class="input-group">
@@ -218,7 +216,7 @@
                     </div>
                 </div>
             </div>
-
+<!--//Attendance stoped here-->
         </div>
         <script src="js/w3.js"></script>
         <script src="js/w3js.js"></script>

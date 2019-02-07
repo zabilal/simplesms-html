@@ -9,12 +9,9 @@
 <link rel="stylesheet" href="css/font/css/font-awesome.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
-    html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-    .clear-addon-background{background: none !important; border: none !important;}
-    .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
-    .w3-row .w3-half .input-group{margin-top: 1rem}
+    html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}.input-group{margin-top:10px}
 </style>
-<body class="w3-light-grey">
+<body class="w3-white">
 
 <!-- Top container -->
 <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
@@ -36,14 +33,15 @@
 <div class="w3-main w3-container" style="margin-left:250px;margin-top:44px;">
     <form>
         <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3>
-            <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-mobile w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+            <!--<input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-mobile w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>-->
+        </div>
     </form>
 
     <!-- Header -->
     <header class=" w3-white w3-margin-top">
-        <ul class="w3-bar w3-left-align" style="padding-left:0">
-            <li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>
-        </ul>
+        <!--<ul class="w3-bar w3-left-align" style="padding-left:0">-->
+            <!--<li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>-->
+        <!--</ul>-->
     </header>
 
     <!--Student Record container-->
@@ -54,35 +52,35 @@
             </div>
             <!--student forms begins here-->
 
-            <div class="w3-row">
+            <div class="w3-row card">
                 <!--<div class="w3-half" style="margin-left: 200px;">-->
                 <div class="w3-half w3-col s12 m12 l6 offset-lg-3">
                     <form>
 
                         <div class="input-group">
-                            <i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                            <input type='text' name='bookname' id="bookname" class='w3-input' placeholder="Book Name">
+                            <!--<i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                            <input type='text' name='bookname' id="bookname" class='form-control' placeholder="Book Name">
                         </div>
 
                         <div class="input-group">
-                            <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                            <input type='text' name='subject' id="subjet" class='w3-input' placeholder="Subject">
+                            <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                            <input type='text' name='subject' id="subjet" class='form-control' placeholder="Subject">
                         </div>
 
                         <div class="input-group">
-                            <i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                            <input type='text' name='returnedby' id="returnedby" class='w3-input' placeholder="Returned by">
+                            <!--<i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                            <input type='text' name='returnedby' id="returnedby" class='form-control' placeholder="Returned by">
                         </div>
 
                         <div class="input-group">
-                            <i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                            <input type='text' name='category' id="category" class='w3-input' placeholder="Category ">
+                            <!--<i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                            <input type='text' name='category' id="category" class='form-control' placeholder="Category ">
                         </div>
 
 
                         <div class="input-group">
-                            <i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                            <input type='date' name='uploaddate' id="uploaddate" class='w3-input' placeholder="Upload Date">
+                            <!--<i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                            <input type='date' name='uploaddate' id="uploaddate" class='form-control' placeholder="Upload Date">
                         </div>
                         <br/>
                         <button class="btn w3-blue w3-col s12 m3 l4">Return Book</button>

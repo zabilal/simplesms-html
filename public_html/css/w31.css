@@ -348,3 +348,4 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-text-dark-grey,.w3-hover-text-dark-grey:hover{color:#3a3a3a !important}
 .w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-text-shadow{text-shadow:1px 1px 0 #444}.w3-text-shadow-white{text-shadow:1px 1px 0 #ddd}
 .w3-metro-dark-purple{color:#fff;background-color:#603cba !important;}
+table{white-space: nowrap !important;}

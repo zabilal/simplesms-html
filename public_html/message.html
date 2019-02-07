@@ -13,13 +13,10 @@
 
         <style>
             html,body,h1,h2,h3,h4,h5{font-family: "Raleway", sans-serif}
-            .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
-            .w3-row .w3-half .input-group{margin-top: 1rem}
-            .clear-addon-background{background: none!important; border: none!important;}
         </style>
     </head>
 
-    <body class="w3-light-grey">
+    <body class="w3-white">
 
         <!-- Top container -->
         <div class="w3-bar w3-top w3-blue w3-large" style="z-index:4">
@@ -40,15 +37,16 @@
              
             <form class="w3-mobile">
                 <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3>
-                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-mobile w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+                    <!--<input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-mobile w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>-->
+                </div>
             </form>
 
             <!-- Header -->
             <header class=" w3-white w3-margin-top">
-                <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="btn btn-info w3-blue">Home</a></li>
-                    <li class="w3-bar-item"><a href="#" class="btn btn-info w3-blue">Message</a></li>
-                </ul>
+                <!--<ul class="w3-bar w3-left-align" style="padding-left:0">-->
+                    <!--<li class="w3-bar-item "><a href="#" class="btn btn-info w3-blue">Home</a></li>-->
+                    <!--<li class="w3-bar-item"><a href="#" class="btn btn-info w3-blue">Message</a></li>-->
+                <!--</ul>-->
             </header>
 
             <!--Student Record container-->
@@ -56,28 +54,28 @@
                 <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
 
                     <!--container to create a new subject-->
-                    <div class='w3-row w3-light-gray'>
+                    <div class='w3-row w3-white'>
                         <div class='w3-white w3-left w3-mobile w3-container' style="width: 60%">
                             <div class="w3-border-bottom w3-margin-bottom w3-padding-bottom w3-bold w3-padding-16 w3-padding-left w3-mobile w3-blue">Write New Message
                                 <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>-->
                             </div>
 
-                            <div class="w3-container w3-mobile">
+                            <div class="w3-container w3-mobile card">
                                 <form style="width: 98%" >
 
                                     <div class="input-group w3-padding-top">
-                                        <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                        <input type="text" class="w3-input" name="percentage" placeholder="Title">
+                                        <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                        <input type="text" class="form-control" name="percentage" placeholder="Title">
                                     </div>
 
                                     <div class="input-group w3-padding-top">
-                                        <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                        <input type="text" class="w3-input" name="recipient" placeholder="Recipient">
+                                        <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                        <input type="text" class="form-control" name="recipient" placeholder="Recipient">
                                     </div>
 
                                     <div class="input-group w3-padding-top">
-                                        <i class="fa fa-envelope w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                        <textarea class="w3-input w3-responsive" name="message" placeholder="Enter your message here" cols="9" rows="8" spellcheck="true"></textarea>
+                                        <!--<i class="fa fa-envelope w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                        <textarea class="form-control w3-responsive" name="message" placeholder="Enter your message here" cols="9" rows="8" spellcheck="true"></textarea>
                                     </div>
 <br/>
                                     <div>
@@ -91,7 +89,7 @@
                         <!--All container for displaying all results-->
                         <div class="w3-right w3-container w3-mobile" style="width: 40%;">
                             <!--This container hold the result table-->
-                            <div class="w3-rest w3-white w3-container w3-mobile" style="height:428px; padding-left:1%">
+                            <div class="w3-rest w3-white w3-container w3-mobile card" style="height:428px; padding-left:1%">
                                 <p class="w3-border-bottom w3-padding-32 w3-bold w3-text-blue w3-center">SENT MESSAGE INFORMATION</p>
                             </div>
 

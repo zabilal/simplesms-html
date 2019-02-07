@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="css/font/css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-        html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        /*CLEAR BOOSTRAP BTN-ADDON BACKGROUNG*/
-        .clear-addon-background{background: none!important; border: none!important;}
-        .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
-        .w3-row .w3-half .input-group{margin-top: 1rem}
+        html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}.input-group{margin-top:10px}
     </style>
     <body class="w3-light-grey">
 
@@ -38,18 +34,11 @@
         <div class="w3-main" style="margin-left:250px;margin-top:44px;">
             <form>
                 <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3>
-                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-mobile w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+                    <!--<input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-mobile w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>-->
+                </div>
             </form>
 
-            <!-- Header -->
-            <header class=" w3-white w3-margin-top">
-                <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>
-                    <li class="w3-bar-item"><a href="#" class="btn w3-blue">Student Admit Form</a></li>
-                </ul>
-            </header>
-
-            <!--Student Record container-->
+                     <!--Student Record container-->
             <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
                     <div class="w3-border-bottom w3-margin-bottom w3-padding lead w3-blue"><span>Add Student</span>
@@ -59,22 +48,22 @@
 
                     <div class="w3-row">
                         <!--<div class="w3-half" style="margin-left: 200px;">-->
-                        <div class="w3-half w3-col s12 m12 l6 offset-lg-3">
-                            <form>
 
+                            <form>
+                                <div class="w3-col s12 m5 l5 offset-lg-1">
                                   <div class="input-group">
-                                      <i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                      <input type='text' name='fname' id="fname" class='w3-input' placeholder="First Name">
+                                      <!--<i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                      <input type='text' name='fname' id="fname" class='form-control' placeholder="First Name">
                                   </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='lanem' id="lname" class='w3-input' placeholder="Last Name">
+                                    <!--<i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='lanem' id="lname" class='form-control' placeholder="Last Name">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <select id='class' class='w3-input'>
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <select id='class' class='form-control'>
                                         <option selected="selected" disabled="disabled">Please Select Class</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -82,8 +71,8 @@
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <select id='section' class='w3-input' name="section">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <select id='section' class='form-control' name="section">
                                         <option selected="selected" disabled="disabled">Please Select Section</option>
                                         <option>A</option>
                                         <option>B</option>
@@ -91,8 +80,8 @@
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-male w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <select name="Gender" id="gender" class="w3-input">
+                                    <!--<i class="fa fa-male w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <select name="Gender" id="gender" class="form-control">
                                         <option selected="selected" disabled="disabled">Please Select Gender</option>
                                         <option>Male</option>
                                         <option>Female</option>
@@ -100,82 +89,86 @@
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='date' name='dob' id="dob" class='w3-input' placeholder="Date of Birth">
+                                    <!--<i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='date' name='dob' id="dob" class='form-control' placeholder="Date of Birth">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='roll' id="roll" class='w3-input' placeholder="Roll">
+                                    <!--<i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='roll' id="roll" class='form-control' placeholder="Roll">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='admissionno' id="admissionno" class='w3-input' placeholder="Admission No">
+                                    <!--<i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='admissionno' id="admissionno" class='form-control' placeholder="Admission No">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='religion' id="religion" class='w3-input' placeholder="Religion">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='religion' id="religion" class='form-control' placeholder="Religion">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-envelope w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='E-mail' id="E-mail" class='w3-input' placeholder="E-mail">
+                                    <!--<i class="fa fa-envelope w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='E-mail' id="E-mail" class='form-control' placeholder="E-mail">
                                 </div>
                                 <br/>
                                 <label class="w3-label">Upload Student photo (150px x 150px)</label>
-                                <input type='file' name='studentpix' class="w3-input">
+                                <input type='file' name='studentpix' class="form-control">
+                                    <br/> <br/>
+                       </div>
 
                                              <!--PARENT INFORMATION-->
 
-                                <div class="w3-panel w3-blue"><h2>Parent Information</h2></div>
+                            <div class="w3-col s12 m5 l5 w3-right w3-container" style="margin-right: 40px">
+                                <!--<div class="w3-panel w3-blue"><h2>Parent Information</h2></div>-->
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='fathername' id="fathername" class='w3-input' placeholder="Father Name">
+                                    <!--<i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='fathername' id="fathername" class='form-control' placeholder="Father Name">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='mothername' id="mothername" class='w3-input' placeholder="Mother Name">
+                                    <!--<i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='mothername' id="mothername" class='form-control' placeholder="Mother Name">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='fatheroccupation' id="fatheroccupation" class='w3-input' placeholder="Father Occupation">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='fatheroccupation' id="fatheroccupation" class='form-control' placeholder="Father Occupation">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='motheroccupation' id="motherocupation" class='w3-input' placeholder="Mother Occupation">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='motheroccupation' id="motherocupation" class='form-control' placeholder="Mother Occupation">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-phone w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='tel' name='phone' id="phone" class='w3-input' placeholder="Phone No">
+                                    <!--<i class="fa fa-phone w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='tel' name='phone' id="phone" class='form-control' placeholder="Phone No">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-home w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='nationality' id="nationality" class='w3-input' placeholder="Nationality">
+                                    <!--<i class="fa fa-home w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='nationality' id="nationality" class='form-control' placeholder="Nationality">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-address-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='presentaddress' id="presentaddress" class='w3-input' placeholder="Address">
+                                    <!--<i class="fa fa-address-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='presentaddress' id="presentaddress" class='form-control' placeholder="Address">
                                 </div>
 
                                 <br/>
 
                                 <label class='w3-label'>Upload Parent photo (150px x 150px)</label>
-                                <input type='file' name='studentphonto' class="w3-input">
+                                <input type='file' name='studentphonto' class="form-control">
                                 <br/>
                                 <button class='btn w3-blue w3-col s2 m3'>Save</button>
 
                                 <br/> <br/> <br/> <br/>
-                             </form>
-                        </div>
+                            </div>
+                      </div>
+                  </form>
                     </div>
                 </div>
             </div>

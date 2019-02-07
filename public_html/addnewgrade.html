@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
+        .form-control:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
         .w3-row .w3-half .input-group{margin-top: 1rem}
         .clear-addon-background{background: none!important; border: none!important;}
     </style>
-    <body class="w3-light-grey">
+    <body class="w3-white">
 
         <!-- Top container -->
         <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
@@ -40,9 +40,9 @@
             </form>
 
             <!-- Header -->
-            <header class=" w3-white w3-margin-top">
+            <header class="w3-white w3-margin-top w3-border-top">
                 <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="btn btn-info w3-blue">Home</a></li>
+                    <!--<li class="w3-bar-item "><a href="#" class="btn btn-info w3-blue">Home</a></li>-->
                     <!--<li class="w3-bar-item"><a href="#" class="btn btn-info w3-blue">Exam Grades</a></li>-->
                 </ul>
             </header>
@@ -53,9 +53,9 @@
                    
                     <!--container to create a new subject-->
                     <div class='w3-row  w3-white'>
-                      <div class='w3-white w3-left w3-mobile card' style="height:400px; width: 25%">
+                      <div class='w3-white w3-left w3-mobile card w3-padding' style="height:400px; width: 25%">
 
-                          <div class="w3-border-bottom w3-margin-bottom w3-padding-bottom w3-bold w3-padding-top ">
+                          <div class="w3-margin-bottom w3-padding-bottom w3-bold w3-padding-top ">
                               Add New Grades
                                 <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>-->
                           </div>
@@ -64,18 +64,18 @@
                               <form style="width: 98%" >
 
                                   <div class="input-group w3-padding-top">
-                                      <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                      <input type='text' name='gradename' id="gradename" class='w3-input' placeholder="Grade Name">
+                                      <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                      <input type='text' name='gradename' id="gradename" class='form-control' placeholder="Grade Name">
                                   </div>
 
                                   <div class="input-group w3-padding-top">
-                                      <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                      <input type="number" class="w3-input" name="score" placeholder="Score">
+                                      <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                      <input type="number" class="form-control" name="score" placeholder="Score">
                                   </div>
 
                                   <div class="input-group w3-padding-top">
-                                      <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                      <select id='scalss' class='w3-input'>
+                                      <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                      <select id='scalss' class='form-control'>
                                           <option selected="selected" disabled="disabled">Grade Point</option>
                                           <option>4.5</option>
                                           <option>3.5</option>
@@ -85,8 +85,8 @@
 
 
                                   <div class="input-group w3-padding-top">
-                                      <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                      <input type="text" class="w3-input" name="remark" placeholder="Remark">
+                                      <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                      <input type="text" class="form-control" name="remark" placeholder="Remark">
                                   </div>
                                   <br/><br/>
                                   <div>

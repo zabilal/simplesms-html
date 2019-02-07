@@ -10,11 +10,8 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">  
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        .clear-addon-background{background: none!important; border: none!important;}
-        .w3-input:focus{outline: none; border-bottom-color: teal; border-bottom-width: medium}
-        .w3-row .w3-half .input-group{margin-top: 1rem}
     </style>
-    <body class="w3-light-grey">
+    <body class="w3-white">
 
         <!-- Top container -->
         <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
@@ -36,22 +33,23 @@
         <div class="w3-main" style="margin-left:250px;margin-top:44px;">
             <form class="w3-margin-bottom">
                 <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3>
-                    <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 form-control w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+                    <!--<input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 form-control w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>-->
+                </div>
             </form>
 
             <!-- Header -->
-            <header class=" w3-white">
-                <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="btn btn-info w3-blue">Home</a></li>
-                    <li class="w3-bar-item"><a href="#" class="btn btn-info w3-blue">Student Admit Form</a></li>
-                </ul>
-            </header>
+            <!--<header class=" w3-white">-->
+                <!--<ul class="w3-bar w3-left-align" style="padding-left:0">-->
+                    <!--<li class="w3-bar-item "><a href="#" class="btn btn-info w3-blue">Home</a></li>-->
+                    <!--<li class="w3-bar-item"><a href="#" class="btn btn-info w3-blue">Student Admit Form</a></li>-->
+                <!--</ul>-->
+            <!--</header>-->
 
             <!--Student Record container-->
             <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-padding-left w3-white w3-mobile" style="height: 50%; box-sizing: border-box;">
-                    <div class="w3-border-bottom w3-margin-bottom w3-padding w3-bold w3-blue"><span class="lead">Search Student Promotion</span>
-                        <span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>
+                    <div class="w3-border-bottom w3-padding w3-bold w3-blue"><span class="lead">Search Student Promotion</span>
+                        <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>-->
                     </div>
                    <!--student forms begins here-->
                     <div class="w3-row">
@@ -60,8 +58,8 @@
                                 <div class='w3-mobile'>
 
                                     <div class="input-group w3-padding-top">
-                                        <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                        <select id='currentsession' class='w3-input' name="session">
+                                        <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                        <select id='currentsession' class='form-control' name="session">
                                             <option selected="selected" disabled="disabled">Current Session</option>
                                             <option>2017 - 2018</option>
                                             <option>2017 - 2018</option>
@@ -69,8 +67,8 @@
                                     </div>
 
                                     <div class="input-group w3-padding-top">
-                                        <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                        <select id='promotesession' class='w3-input' name="section">
+                                        <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                        <select id='promotesession' class='form-control' name="section">
                                             <option selected="selected" disabled="disabled">Promote To Session</option>
                                             <option>2017 - 2018</option>
                                             <option>2017 - 2018</option>
@@ -78,8 +76,8 @@
                                     </div>
 
                                     <div class="input-group w3-padding-top">
-                                        <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                        <select id='promotefromcalss' class='w3-input'>
+                                        <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                        <select id='promotefromcalss' class='form-control'>
                                             <option selected="selected" disabled="disabled">Promote From Class</option>
                                             <option>1</option>
                                             <option>2</option>
@@ -87,15 +85,16 @@
                                     </div>
 
                                     <div class="input-group w3-padding-top">
-                                        <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                        <select id='promotetoclass' class='w3-input'>
+                                        <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                        <select id='promotetoclass' class='form-control'>
                                             <option selected="selected" disabled="disabled">Promote To Section</option>
                                             <option>1</option>
                                             <option>2</option>
                                         </select>
                                     </div>
+                                    <br/>
 
-                                    <button class='btn btn-info w3-margin-24 w3-blue'>Search</button>
+                                    <button class='btn btn-info w3-blue'>Search</button>
 
                                 </div>
                             </form>
@@ -103,7 +102,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w3-container w3-margin-top w3-mobile">
+            <div class="w3-container w3-border-bottom w3-mobile">
                 <div class="w3-rest w3-white w3-container w3-responsive" style="height:428px; padding-left:1%">
                     <div class="w3-responsive w3-container w3-padding-24">
 

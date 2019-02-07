@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
     html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-    nav>div{background-color:#fff !important; color:black;}
+    nav>div{background-color:#fff !important; color:black !important;}
 </style>
 <body class="w3-light-grey">
 
@@ -35,35 +35,35 @@
         <div class="w3-accordion" style="display: none">
             <button onclick="myFunction('dashboard')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-dashboard"></span>  Dashboard</button>
             <div id="dashboard" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                <a href="index.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Admin</a>
-                <a href="studentrecord.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Student</a>
-                <a href="parent2.html"  target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
+                <a href="index.html" target="_self" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Admin</a>
+                <a href="studentrecord.html" target="_self" class="w3-button w3-left-align"><span class="w3-left">&#9758; </span>Student</a>
+                <a href="parent2.html"  target="_self" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
             </div>
         </div>
 
         <!--DASHBOARD HIDDEN-->
     </div><button onclick="myFunction('admission')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-users"></span> Addmission</button>
     <div id="admission" class="w3-accordion-content w3-bar-block w3-zakcontent">
-        <a href="studentAdmitForm.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>New Student</a>
+        <a href="studentAdmitForm.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>New Student</a>
         <a href="allstudents.html" class="w3-button w3-left-align"><span>&#9758; </span>All Applicants</a>
-        <!--<a href="studentAdmitForm.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>-->
-        <!--<a href="studentpromotion.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Students Promotion</a>-->
+        <!--<a href="studentAdmitForm.html" target="_self" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>-->
+        <!--<a href="studentpromotion.html" target="_self" class="w3-button w3-left-align"><span>&#9758; </span>Students Promotion</a>-->
     </div>
 
     </div>
         <div class="w3-accordion">
             <!--<button onclick="myFunction('students')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-users"></span> Students</button>-->
             <!--<div id="students" class="w3-accordion-content w3-bar-block w3-zakcontent">-->
-                <!--<a href="allstudents.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Students</a>-->
+                <!--<a href="allstudents.html" target="_self" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>All Students</a>-->
                 <!--<a href="studentdetails.html" class="w3-button w3-left-align"><span>&#9758; </span>Student Details</a>-->
-                <!--<a href="studentAdmitForm.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>-->
+                <!--<a href="studentAdmitForm.html" target="_self" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>-->
 
         </div><button onclick="myFunction('students')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-users"></span> People</button>
             <div id="students" class="w3-accordion-content w3-bar-block w3-zakcontent">
-                <a href="allstudents.html" target="_blank" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Students</a>
+                <a href="allstudents.html" target="_self" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Students</a>
                 <a href="allparents.html" class="w3-button w3-left-align"><span>&#9758; </span>Parents</a>
-                <!--<a href="studentAdmitForm.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>-->
-                <!--<a href="studentpromotion.html" target="_blank" class="w3-button w3-left-align"><span>&#9758; </span>Students Promotion</a>-->
+                <!--<a href="studentAdmitForm.html" target="_self" class="w3-button w3-left-align"><span>&#9758; </span>Admit Form</a>-->
+                <!--<a href="studentpromotion.html" target="_self" class="w3-button w3-left-align"><span>&#9758; </span>Students Promotion</a>-->
             </div>
         </div>
             <!--LIBRARY MENU-->
@@ -108,6 +108,7 @@
                 <a href="Term.html" class="w3-button w3-left-align"><span>&#9758; </span>Manage Term</a>
                 <a href="" class="w3-button w3-left-align"><span>&#9758; </span>Manage Time Table</a>
                 <a href="" class="w3-button w3-left-align"><span>&#9758; </span>Manage Calender</a>
+                <a href="attendace1.html" class="w3-button w3-left-align"><span>&#9758; </span>Attendance</a>
             </div>
         </div>
             
@@ -125,7 +126,7 @@
             <div id="teachers" class="w3-accordion-content w3-bar-block w3-zakcontent">
                 <a href="" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Add Fees Category</a>
                 <a href="" class="w3-button w3-left-align"><span>&#9758; </span>Add Fee</a>
-                <a href="" class="w3-button w3-left-align"><span>&#9758; </span>Make Payment</a>
+                <a href="paymentinformation.html" class="w3-button w3-left-align"><span>&#9758; </span>Make Payment</a>
                 <a href="" class="w3-button w3-left-align"><span>&#9758; </span>Payment Report</a>
 
             </div>
@@ -225,7 +226,7 @@
         <!--</div> -->
 
         <div class="w3-accordion w3-green">
-            <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-bitcoin"></span> Finances</button>
+            <button onclick="myFunction('exam')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-money"></span> Finances</button>
             <div id="exam" class="w3-accordion-content w3-bar-block w3-zakcontent">
                 <a href="" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Income</a>
                 <a href="" class="w3-button w3-left-align"><span>&#9758; </span>Expenses</a>
@@ -243,7 +244,7 @@
         <!--</div>-->
 
         <div class="w3-accordion w3-green">
-            <button onclick="myFunction('transport')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-etsy"></span> HR/Payroll</button>
+            <button onclick="myFunction('transport')" class="w3-btn-block w3-left-align w3-zak"><span class="fa fa-calendar"></span> HR/Payroll</button>
             <div id="transport" class="w3-accordion-content w3-bar-block w3-zakcontent">
             <a href="addnewteacher.html" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Manage Staff</a>
             <a href="" class="w3-button w3-left-align"><span class="w3-left-align">&#9758; </span>Staff Payroll</a>

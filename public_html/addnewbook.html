@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/w31.css">
-    <link rel="stylesheet" href="css/panelcss.css">
+    <!--<link rel="stylesheet" href="css/panelcss.css">-->
     <link rel="stylesheet" href="css/font/css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        .clear-addon-background{background: none !important; border: none !important;}
-        .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
-        .w3-row .w3-half .input-group{margin-top: 1rem}
+        .input-group{padding-bottom: 8px;}
     </style>
-    <body class="w3-light-grey">
+    <body class="w3-white">
 
         <!-- Top container -->
         <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
@@ -40,12 +38,12 @@
             </form>
 
             <!-- Header -->
-            <header class=" w3-white w3-margin-top">
-                <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>
-                    <!--<li class="w3-bar-item"><a href="#" class="btn w3-blue">Add New Book</a></li>-->
-                </ul>
-            </header>
+            <!--<header class=" w3-white w3-margin-top">-->
+                <!--<ul class="w3-bar w3-left-align" style="padding-left:0">-->
+                    <!--<li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>-->
+                    <!--&lt;!&ndash;<li class="w3-bar-item"><a href="#" class="btn w3-blue">Add New Book</a></li>&ndash;&gt;-->
+                <!--</ul>-->
+            <!--</header>-->
 
             <!--Student Record container-->
             <div class="w3-row-padding w3-container" style="margin:0 -16px">
@@ -55,50 +53,50 @@
                     </div>
                    <!--student forms begins here-->
 
-                    <div class="w3-row">
+                    <div class="w3-row card w3-padding">
                         <!--<div class="w3-half" style="margin-left: 200px;">-->
                         <div class="w3-half w3-col s12 m12 l6 offset-lg-3">
                             <form>
 
                                 <div class="input-group">
-                                    <i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='fname' id="fname" class='w3-input' placeholder="Book Name">
+                                    <!--<i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='fname' id="fname" class='form-control' placeholder="Book Name">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='subject' id="subjet" class='w3-input' placeholder="Subject">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='subject' id="subjet" class='form-control' placeholder="Subject">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='category' id="category" class='w3-input' placeholder="Category">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='category' id="category" class='form-control' placeholder="Category">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='authorname' id="authorname" class='w3-input' placeholder="Author Name">
+                                    <!--<i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='authorname' id="authorname" class='form-control' placeholder="Author Name">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='class' id="class" class='w3-input' placeholder="Class">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='class' id="class" class='form-control' placeholder="Class">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='date' name='publishingyear' id="publishingyear" class='w3-input'>
+                                    <!--<i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='date' name='publishingyear' id="publishingyear" class='form-control'>
                                 </div>
 
                                 <!--&lt;!&ndash;<div class="input-group">&ndash;&gt;-->
                                     <!--<label>Upload Date</label>-->
                                     <!--&lt;!&ndash;<i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>&ndash;&gt;-->
-                                    <!--<input type='date' name='uploaddate' id="uploaddate" class='w3-input' placeholder="Upload Date">-->
+                                    <!--<input type='date' name='uploaddate' id="uploaddate" class='form-control' placeholder="Upload Date">-->
                                 <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
                                 <div class="input-group">
-                                    <i class="fa fa-id-card w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='number' name='isbn' id="isbn" class='w3-input' placeholder="ISBN No">
+                                    <!--<i class="fa fa-id-card w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='number' name='isbn' id="isbn" class='form-control' placeholder="ISBN No">
                                 </div>
                                 <br/>
                                 <button class="btn w3-blue w3-col s12 m3 l3">Add Book</button>

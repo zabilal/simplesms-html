@@ -10,11 +10,8 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
     html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-    .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
-    .w3-row .w3-half .input-group{margin-top: 1rem}
-    .clear-addon-background{background: none!important; border: none!important;}
 </style>
-<body class="w3-light-grey">
+<body class="w3-white">
 
 <!-- Top container -->
 <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
@@ -36,16 +33,17 @@
 <div class="w3-main w3-container" style="margin-left:250px;margin-top:44px;">
     <form>
         <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3>
-            <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-mobile w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+            <!--<input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-mobile w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>-->
+        </div>
     </form>
 
     <!-- Header -->
-    <header class=" w3-white w3-margin-top">
-        <ul class="w3-bar w3-left-align" style="padding-left:0">
-            <li class="w3-bar-item "><a href="#" class="btn btn-info w3-blue">Home</a></li>
-            <!--<li class="w3-bar-item"><a href="#" class="btn btn-info w3-blue">Add New</a></li>-->
-        </ul>
-    </header>
+    <!--<header class=" w3-white w3-margin-top">-->
+        <!--<ul class="w3-bar w3-left-align" style="padding-left:0">-->
+            <!--<li class="w3-bar-item "><a href="#" class="btn btn-info w3-blue">Home</a></li>-->
+            <!--&lt;!&ndash;<li class="w3-bar-item"><a href="#" class="btn btn-info w3-blue">Add New</a></li>&ndash;&gt;-->
+        <!--</ul>-->
+    <!--</header>-->
 
     <div class="w3-row-padding w3-container" style="margin:0 -16px;">
         <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
@@ -63,7 +61,7 @@
                         <form style="width: 98%" >
 
                             <div class="input-group w3-padding-top">
-                                <select class="w3-input">
+                                <select class="form-control">
                                     <option selected="selected" disabled="disabled">Select Term</option>
                                     <option>First</option>
                                     <option>Second</option>
@@ -72,23 +70,23 @@
                             </div>
 
                             <div class="input-group w3-padding-top">
-                                <input type='text' name='session' id="session" class='w3-input' placeholder="Session">
+                                <input type='text' name='session' id="session" class='form-control' placeholder="Session">
                             </div>
 
 
                             <div class="w3-padding-top">
                                 <label for="sessionbegin">Term Begin</label>
-                                <input type='date' name='sessionbegin' id="sessionbegin" class='w3-input'>
+                                <input type='date' name='sessionbegin' id="sessionbegin" class='form-control'>
                             </div>
 
                             <div class="w3-padding-top">
                                 <label for="sessionend">Term End</label>
-                                <input type='date' name='sessionbegin' id="sessionend" class='w3-input'>
+                                <input type='date' name='sessionbegin' id="sessionend" class='form-control'>
                             </div>
 
 
                             <div class="input-group w3-padding-top">
-                                <input type='text' name='status' id="status" class='w3-input' placeholder="Status">
+                                <input type='text' name='status' id="status" class='form-control' placeholder="Status">
                             </div>
 
                             <br/><br/>
@@ -127,8 +125,10 @@
                         </div>
                     </form>
                     <!--This container hold the result table-->
+
+
                     <div class="w3-rest w3-white w3-responsive w3-padding-left" style="height:500px; padding-left:1%">
-                        <table style='width:100%; line-height: 200%' class="w3-mobile w3-small">
+                        <table style='width:100%; line-height: 200%' class="w3-mobile w3-small w3-responsive">
                             <thead>
                             <td class="w3-bold">Term</td>
                             <td class="w3-bold">Session</td>
@@ -153,8 +153,6 @@
                                 <td> On Session</td>
                                 <td><i class="fa fa-edit w3-padding-right"></i><i class="fa fa-trash"></i></td>
                             </tr>
-
-
                         </table>
 
                     </div>

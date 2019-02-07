@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <style>
-        html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        .clear-addon-background{background: none!important; border: none!important;}
-        .w3-input:focus{outline: none; border-bottom-color: teal; border-bottom-width: medium}
-        .w3-row .w3-half .input-group{margin-top: 1rem}
-    </style>
-    <body class="w3-light-grey">
+        html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}.input-group{margin-top:10px}
+     </style>
+    <body class="w3-white">
 
         <!-- Top container -->
         <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
@@ -41,42 +38,42 @@
 
             <!-- Header -->
             <header class=" w3-white w3-margin-top">
-                <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>
-                    <li class="w3-bar-item"><a href="#" class="btn w3-blue">Create Payment</a></li>
-                </ul>
+                <!--<ul class="w3-bar w3-left-align" style="padding-left:0">-->
+                    <!--<li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>-->
+                    <!--<li class="w3-bar-item"><a href="#" class="btn w3-blue">Create Payment</a></li>-->
+                <!--</ul>-->
             </header>
 
             <!--Student Record container-->
             <div class="w3-row-padding" style="margin:0 -16px">
-                <div class="w3-padding-left w3-white" style="height: 50%; box-sizing: border-box;">
+                <div class="w3-padding-left w3-white w3-container" style="height: 50%; box-sizing: border-box;">
                     <div class="w3-border-bottom w3-margin-bottom w3-padding-16 w3-blue w3-padding-left"><span class="w3-bold"><h4>Payment Information</h4></span>
                         <!--<span class='w3-right w3-button w3-text-red w3-round-xxlarge'>&#215;</span>-->
                     </div>
                    <!--student forms begins here-->
-                    <div class="w3-row">
+                    <div class="w3-row card w3-container">
                         <!--<div class="w3-half" style="margin-left: 200px;">-->
                         <div class="w3-half w3-col s12 m12 l6 offset-lg-3">
                             <form>
 
                                 <div class="input-group">
-                                    <i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='fname' id="fname" class='w3-input' placeholder="First Name">
+                                    <!--<i class="fa fa-book w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='fname' id="fname" class='form-control' placeholder="First Name">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='lanem' id="lname" class='w3-input' placeholder="Last Name">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='lanem' id="lname" class='form-control' placeholder="Last Name">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='ID' id="ID" class='w3-input' placeholder="ID">
+                                    <!--<i class="fa fa-user w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='ID' id="ID" class='form-control' placeholder="ID">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <select id='class' class='w3-input'>
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <select id='class' class='form-control'>
                                         <option selected="selected" disabled="disabled">Class</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -84,8 +81,8 @@
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <select id='section' class='w3-input'>
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <select id='section' class='form-control'>
                                         <option selected="selected" disabled="disabled">Section</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -93,13 +90,13 @@
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-money w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type="text" name="totalfee" class="w3-input" placeholder="Total Fee">
+                                    <!--<i class="fa fa-money w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type="text" name="totalfee" class="form-control" placeholder="Total Fee">
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <select id='section' class='w3-input'>
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <select id='paymentmethod' class='form-control'>
                                         <option selected="selected" disabled="disabled">Payment Method</option>
                                         <option value="Master">Master</option>
                                         <option value="PayPal">PayPal</option>
@@ -107,8 +104,8 @@
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-male w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <select id='status' class='w3-input'>
+                                    <!--<i class="fa fa-male w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <select id='status' class='form-control'>
                                         <option selected="selected" disabled="disabled">Status</option>
                                         <option value="Paid">Paid</option>
                                         <option value="Unpaid">Unpaid</option>
@@ -116,20 +113,20 @@
                                 </div>
 
                                 <div class="input-group">
-                                    <i class="fa fa-id-card w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type="date" class="w3-input" placeholder="Date">
+                                    <!--<i class="fa fa-id-card w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type="date" class="form-control" placeholder="Date">
                                 </div>
 
 
                                 <br/>
-                                <button class="btn w3-blue w3-col s12 m3 l3">Save</button>
+                                <button class="btn w3-blue w3-col s12 m3 l3">Make Payment</button>
                                 <br/><br/>
                             </form>
+                            <br/><br/>
                         </div>
                     </div>
-
                 </div>
-            </div>
+            </div> <br/><br/>
         </div>
         <script src="js/w3.js"></script>
         <script>

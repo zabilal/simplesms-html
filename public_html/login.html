@@ -8,33 +8,30 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/w3.css">
         <style>
-            .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
-            .w3-row .w3-half .input-group{margin-top: 1rem}
-            .clear-addon-background{background: none!important; border: none!important;}
-            .passcontainer{}
+            .input-group{padding-bottom:10px;}form{margin-left:8%}
         </style>
     </head>
     <body class="w3-light-gray">
-        <div class=" w3-row container ">
-            <div class="w3-half w3-col s12 m12 l6 offset-lg-4  offset-md-4 w3-animate-right">
+        <div class="w3-row container">
+            <div class="w3-half w3-col s12 m12 l6 offset-lg-3  offset-md-4 w3-animate-right">
 
-                    <div style="width: 25rem; height: 20rem; margin-top: 12rem;" class="w3-white card">
-                            <form>
+                    <div style="width: 30rem; height: 20rem; margin-top: 12rem;" class="w3-white card w3-container">
+                            <form style="width:80%">
 
                                 <h1 class="w3-center" style="color:blue">Login</h1><br>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type="text" class="w3-input" name="username" placeholder="User Name or E-mail">
+                                    <!--<i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type="text" class="form-control" name="username" placeholder="User Name or E-mail">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-eye w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type="password" class="w3-input" name="password" placeholder="Password">
+                                    <!--<i class="fa fa-eye w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type="password" class="form-control" name="password" placeholder="Password">
                                 </div>
                                 <br/>
                                 <div>
-                                    <button class="btn w3-blue w3-margin-right w3-col s12 m3 l3 offset-lg-1">Login</button>
+                                    <button class="btn w3-blue w3-col s12 m3 l3">Login</button>
                                 </div>
                             </form>
                         </div>

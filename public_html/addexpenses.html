@@ -9,12 +9,8 @@
     <link rel="stylesheet" href="css/font/css/font-awesome.css">
     <style>
         html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        .w3-input:focus{outline: none; border-bottom-color: blue; border-bottom-width: medium}
-        .w3-row .w3-half .input-group{margin-top: 1rem}
-        .clear-addon-background{background: none; border: none}
-
     </style>
-    <body class="w3-light-grey">
+    <body class="w3-white">
 
         <!-- Top container -->
         <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
@@ -40,12 +36,12 @@
             </form>
 
             <!-- Header -->
-            <header class=" w3-white w3-margin-top">
-                <ul class="w3-bar w3-left-align" style="padding-left:0">
-                    <li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>
-                    <li class="w3-bar-item"><a href="#" class="btn w3-blue">Add Expenses</a></li>
-                </ul>
-            </header>
+            <!--<header class=" w3-white w3-margin-top">-->
+                <!--<ul class="w3-bar w3-left-align" style="padding-left:0">-->
+                    <!--<li class="w3-bar-item "><a href="#" class="btn w3-blue">Home</a></li>-->
+                    <!--<li class="w3-bar-item"><a href="#" class="btn w3-blue">Add Expenses</a></li>-->
+                <!--</ul>-->
+            <!--</header>-->
 
             <!--Student Record container-->
             <div class="w3-row-padding w3-container" style="margin:0 -16px">
@@ -56,29 +52,29 @@
                    <!--student forms begins here-->
 
 
-                    <div class="w3-row">
+                    <div class="w3-row card">
                         <!--<div class="w3-half" style="margin-left: 200px;">-->
                         <div class="w3-half w3-col s12 m12 l6 offset-lg-3 w3-animate-right">
                             <form>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>
-                                    <input type='text' name='name' id="name" class='w3-input' placeholder="Name">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>-->
+                                    <input type='text' name='name' id="name" class='form-control' placeholder="Name">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>
-                                    <input type='text' name='idno' id="idno" class='w3-input' placeholder="ID No">
+                                    <!--<i class="fa fa-user-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>-->
+                                    <input type='text' name='idno' id="idno" class='form-control' placeholder="ID No">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>
-                                    <input type='date' name='dob' id="date" class='w3-input' placeholder="Date">
+                                    <!--<i class="fa fa-calendar w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>-->
+                                    <input type='date' name='dob' id="date" class='form-control' placeholder="Date">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>
-                                    <select id='sclass' class='w3-input'>
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>-->
+                                    <select id='sclass' class='form-control'>
                                         <option selected="selected" disabled="disabled">Expenses Type</option>
                                         <option value="verve">salary</option>
                                         <option value="master">Salary</option>
@@ -86,24 +82,24 @@
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-money w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>
-                                    <input type='text' name='amount' id="religion" class='w3-input' placeholder="Amount">
+                                    <!--<i class="fa fa-money w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>-->
+                                    <input type='text' name='amount' id="religion" class='form-control' placeholder="Amount">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-phone w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>
-                                    <input type='tel' name='phone' id="phone" class='w3-input' placeholder="Phone No">
+                                    <!--<i class="fa fa-phone w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>-->
+                                    <input type='tel' name='phone' id="phone" class='form-control' placeholder="Phone No">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-envelope w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>
-                                    <input type='email' name='religion' id="email" class='w3-input' placeholder="E-Mail">
+                                    <!--<i class="fa fa-envelope w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>-->
+                                    <input type='email' name='religion' id="email" class='form-control' placeholder="E-Mail">
                                 </div>
 
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-home w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>
-                                    <select id='status' class='w3-input'>
+                                    <!--<i class="fa fa-home w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background" style="background: none; border: none"></i>-->
+                                    <select id='status' class='form-control'>
                                         <option selected="selected" disabled="disabled">Status</option>
                                         <option value="verve">Paid</option>
                                         <option value="master">Unpad</option>

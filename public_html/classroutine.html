@@ -10,9 +10,6 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
     html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-    .w3-input:focus{outline: none; border-bottom-color: teal; border-bottom-width: medium}
-    .w3-row .w3-half .input-group{margin-top: 1rem}
-    .clear-addon-background{background: none; border: none}
 </style>
 <body class="w3-light-grey">
 
@@ -161,16 +158,16 @@
 <!--Search bar-->
 <div class="w3-main w3-container" style="margin-left:250px;margin-top:44px;">
     <form>
-        <div class="w3-container w3-rest w3-white w3-padding-16 w3-center">School Management System
-            <input style="width: 40%" type="text" name="search" placeholder="Search Here..." class="w3-border-0 w3-padding-4 w3-padding-left w3-right w3-text-black w3-round-large w3-light-grey"><span></span></div>
+        <div class="w3-container w3-white w3-padding-16 w3-center"><h3 class="w3-left leading-and-scalling w3-mobile">School Management System</h3></div>
+
     </form>
 
     <!-- Header -->
     <header class=" w3-white w3-margin-top">
-        <ul class="w3-bar w3-left-align" style="padding-left:0">
-            <li class="w3-bar-item "><a href="#" class="btn btn-info">Home</a></li>
-            <li class="w3-bar-item"><a href="#" class="btn btn-info">Class Routine</a></li>
-        </ul>
+        <!--<ul class="w3-bar w3-left-align" style="padding-left:0">-->
+            <!--<li class="w3-bar-item "><a href="#" class="btn btn-info">Home</a></li>-->
+            <!--<li class="w3-bar-item"><a href="#" class="btn btn-info">Class Routine</a></li>-->
+        <!--</ul>-->
     </header>
 
     <!--Student Record container-->
@@ -193,13 +190,13 @@
                             <form>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='subjectname' id="subjectname" class='w3-input' placeholder="Subject Name">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='subjectname' id="subjectname" class='form-control' placeholder="Subject Name">
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <select id='type' class='w3-input'>
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <select id='type' class='form-control'>
                                         <option selected="selected" disabled="disabled"> subject Type</option>
                                         <option>Math</option>
                                         <option>English</option>
@@ -207,8 +204,8 @@
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <select id='classtype' class='w3-input'>
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <select id='classtype' class='form-control'>
                                         <option selected="selected" disabled="disabled">Select Class</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -216,14 +213,14 @@
                                 </div>
 
                                 <div class="input-group w3-padding-top">
-                                    <i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>
-                                    <input type='text' name='subjectcode' id="subjectcode" class='w3-input' placeholder="Subject Code">
+                                    <!--<i class="fa fa-plus w3-text-blue w3-left input-group-addon w3-xlarge clear-addon-background"></i>-->
+                                    <input type='text' name='subjectcode' id="subjectcode" class='form-control' placeholder="Subject Code">
                                 </div>
 
 
                                 <br>
 
-                                <button class='btn btn-info'>Submit</button>
+                                <button class='btn w3-blue'>Submit</button>
                                 <br>
                             </form>
                         </div>
